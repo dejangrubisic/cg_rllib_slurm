@@ -1,0 +1,174 @@
+2022-10-17 14:48:50,571	INFO services.py:1338 -- View the Ray dashboard at [1m[32mhttp://127.0.0.1:8265[39m[22m
+INFO:ray.worker:Using address auto set in the environment variable RAY_ADDRESS
+2022-10-17 14:49:12,459	INFO worker.py:842 -- Connecting to existing Ray cluster at address: 100.97.70.7:6888
+[2022-10-17 14:49:12,481 I 3025936 3025936] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to -1
+DEBUG:compiler_gym.service.connection:Exec `./example_service.py --working_dir=/dev/shm/compiler_gym_dejang/s/1017T144912-636349-78ff --alsologtostderr -v=1 --logbuflevel=-1`
+I1017 14:49:22.390644 140004464132928 create_and_run_compiler_gym_service.py:117] Service /dev/shm/compiler_gym_dejang/s/1017T144912-636349-78ff listening on 37927, PID = 3026227
+I1017 14:49:23.269374 140001237006080 compiler_gym_service.py:105] GetSpaces()
+DEBUG:compiler_gym.service.client_service_compiler_env:Setting benchmark: benchmark://example-v0/foo
+I1017 14:49:23.272954 140004464132928 create_and_run_compiler_gym_service.py:48] Service received signal: 15
+I1017 14:49:23.273442 140004464132928 create_and_run_compiler_gym_service.py:130] Shutting down the RPC service
+I1017 14:49:23.273961 140004464132928 create_and_run_compiler_gym_service.py:133] Service closed
+/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/ray/tune/callback.py:217: FutureWarning: Please update `setup` method in callback `<class 'ray.tune.integration.wandb.WandbLoggerCallback'>` to match the method signature in `ray.tune.callback.Callback`.
+  warnings.warn(
+[2m[33m(raylet)[0m [2022-10-17 14:49:26,632 W 3026429 3026429] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 14:49:26,632 I 3026429 3026429] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 14:49:26,651 W 3026428 3026428] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 14:49:26,651 I 3026428 3026428] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+DEBUG:git.cmd:Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/private/home/dejang/tools/cg_rllib_slurm, universal_newlines=False, shell=None, istream=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG:urllib3.connectionpool:https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 521
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.wandb.ai:443
+wandb: W&B API key is configured. Use `wandb login --relogin` to force relogin
+DEBUG:git.cmd:Popen(['git', 'cat-file', '--batch-check'], cwd=/private/home/dejang/tools/cg_rllib_slurm, universal_newlines=False, shell=None, istream=<valid stream>)
+[2m[36m(PPO pid=3026429)[0m 2022-10-17 14:49:34,847	INFO trainer.py:722 -- Your framework setting is 'tf', meaning you are using static-graph mode. Set framework='tf2' to enable eager execution with tf2.x. You may also want to then set `eager_tracing=True` in order to reach similar execution speed as with static-graph mode.
+[2m[36m(PPO pid=3026429)[0m 2022-10-17 14:49:34,848	INFO ppo.py:166 -- In multi-agent mode, policies will be optimized sequentially by the multi-GPU optimizer. Consider setting simple_optimizer=True if this doesn't work for you.
+[2m[36m(PPO pid=3026429)[0m 2022-10-17 14:49:34,848	INFO trainer.py:743 -- Current log_level is WARN. For more information, set 'log_level': 'INFO' / 'DEBUG' or use the -v and -vv flags.
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG:urllib3.connectionpool:https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 325
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /private/home/dejang/tools/cg_rllib_slurm/wandb/run-20221017_144934-90e1f_00000
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run PPO_example-v0_90e1f_00000
+wandb: ⭐️ View project at https://wandb.ai/dejang/loop_tool_agent
+wandb: 🚀 View run at https://wandb.ai/dejang/loop_tool_agent/runs/90e1f_00000
+[2m[36m(RolloutWorker pid=3026428)[0m 2022-10-17 14:49:54,647	WARNING deprecation.py:45 -- DeprecationWarning: `SampleBatch['is_training']` has been deprecated. Use `SampleBatch.is_training` instead. This will raise an error in the future!
+[2m[36m(PPO pid=3026429)[0m 2022-10-17 14:49:55,657	WARNING deprecation.py:45 -- DeprecationWarning: `SampleBatch['is_training']` has been deprecated. Use `SampleBatch.is_training` instead. This will raise an error in the future!
+[2m[36m(PPO pid=3026429)[0m 2022-10-17 14:49:56,333	INFO trainable.py:124 -- Trainable.setup took 23.198 seconds. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
+[2m[36m(PPO pid=3026429)[0m 2022-10-17 14:49:56,334	WARNING util.py:57 -- Install gputil for GPU system monitoring.
+[2m[36m(PPO pid=3026429)[0m /private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/ray/rllib/utils/metrics/learner_info.py:64: RuntimeWarning: Mean of empty slice
+[2m[36m(PPO pid=3026429)[0m   lambda *s: None if s[0] is None else np.nanmean(s, axis=0),
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                                   agent_timesteps_total ▁
+wandb:                                      episodes_this_iter ▁
+wandb:                                          episodes_total ▁
+wandb:  info/learner/default_policy/learner_stats/cur_kl_coeff ▁
+wandb:        info/learner/default_policy/learner_stats/cur_lr ▁
+wandb:       info/learner/default_policy/learner_stats/entropy ▁
+wandb: info/learner/default_policy/learner_stats/entropy_coeff ▁
+wandb:            info/learner/default_policy/learner_stats/kl ▁
+wandb:   info/learner/default_policy/learner_stats/policy_loss ▁
+wandb:    info/learner/default_policy/learner_stats/total_loss ▁
+wandb:       info/learner/default_policy/learner_stats/vf_loss ▁
+wandb:                            info/num_agent_steps_sampled ▁
+wandb:                            info/num_agent_steps_trained ▁
+wandb:                                  info/num_steps_sampled ▁
+wandb:                                  info/num_steps_trained ▁
+wandb:                                iterations_since_restore ▁
+wandb:                                     num_healthy_workers ▁
+wandb:                                   perf/cpu_util_percent ▁
+wandb:                                   perf/ram_util_percent ▁
+wandb:                                      time_since_restore ▁
+wandb:                                        time_this_iter_s ▁
+wandb:                                            time_total_s ▁
+wandb:                                 timers/learn_throughput ▁
+wandb:                                    timers/learn_time_ms ▁
+wandb:                                  timers/load_throughput ▁
+wandb:                                     timers/load_time_ms ▁
+wandb:                                timers/sample_throughput ▁
+wandb:                                   timers/sample_time_ms ▁
+wandb:                                   timers/update_time_ms ▁
+wandb:                                               timestamp ▁
+wandb:                                 timesteps_since_restore ▁
+wandb:                                     timesteps_this_iter ▁
+wandb:                                         timesteps_total ▁
+wandb:                                      training_iteration ▁
+wandb: 
+wandb: Run summary:
+wandb:                                   agent_timesteps_total 5
+wandb:                                        episode_len_mean nan
+wandb:                                      episode_reward_max nan
+wandb:                                     episode_reward_mean nan
+wandb:                                      episode_reward_min nan
+wandb:                                      episodes_this_iter 0
+wandb:                                          episodes_total 0
+wandb:  info/learner/default_policy/learner_stats/cur_kl_coeff 0.2
+wandb:        info/learner/default_policy/learner_stats/cur_lr 5e-05
+wandb:       info/learner/default_policy/learner_stats/entropy 1.09861
+wandb: info/learner/default_policy/learner_stats/entropy_coeff 0.0
+wandb:            info/learner/default_policy/learner_stats/kl 0.0
+wandb:   info/learner/default_policy/learner_stats/policy_loss 0.0
+wandb:    info/learner/default_policy/learner_stats/total_loss 0.0
+wandb:       info/learner/default_policy/learner_stats/vf_loss 0.0
+wandb:                            info/num_agent_steps_sampled 5
+wandb:                            info/num_agent_steps_trained 5
+wandb:                                  info/num_steps_sampled 5
+wandb:                                  info/num_steps_trained 5
+wandb:                                iterations_since_restore 1
+wandb:                                     num_healthy_workers 1
+wandb:                                   perf/cpu_util_percent 8.9
+wandb:                                   perf/ram_util_percent 16.2
+wandb:                                      time_since_restore 0.3787
+wandb:                                        time_this_iter_s 0.3787
+wandb:                                            time_total_s 0.3787
+wandb:                                 timers/learn_throughput 16.531
+wandb:                                    timers/learn_time_ms 302.47
+wandb:                                  timers/load_throughput 28610.532
+wandb:                                     timers/load_time_ms 0.175
+wandb:                                timers/sample_throughput 61.804
+wandb:                                   timers/sample_time_ms 80.901
+wandb:                                   timers/update_time_ms 1.948
+wandb:                                               timestamp 1666043396
+wandb:                                 timesteps_since_restore 0
+wandb:                                     timesteps_this_iter 0
+wandb:                                         timesteps_total 5
+wandb:                                      training_iteration 1
+wandb: 
+wandb: Synced PPO_example-v0_90e1f_00000: https://wandb.ai/dejang/loop_tool_agent/runs/90e1f_00000
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221017_144934-90e1f_00000/logs
+2022-10-17 14:50:00,487	WARNING util.py:165 -- The `process_trial_result` operation took 3.751 s, which may be a performance bottleneck.
+2022-10-17 14:50:00,487	WARNING util.py:165 -- Processing trial results took 3.751 s, which may be a performance bottleneck. Please consider reporting results less frequently to Ray Tune.
+2022-10-17 14:50:00,487	WARNING util.py:165 -- The `process_trial` operation took 3.752 s, which may be a performance bottleneck.
+[2m[36m(RolloutWorker pid=3026428)[0m 2022-10-17 14:50:01,298	ERROR worker.py:431 -- SystemExit was raised from the worker
+[2m[36m(RolloutWorker pid=3026428)[0m Traceback (most recent call last):
+[2m[36m(RolloutWorker pid=3026428)[0m   File "python/ray/_raylet.pyx", line 625, in ray._raylet.execute_task
+[2m[36m(RolloutWorker pid=3026428)[0m   File "python/ray/_raylet.pyx", line 629, in ray._raylet.execute_task
+[2m[36m(RolloutWorker pid=3026428)[0m   File "python/ray/_raylet.pyx", line 578, in ray._raylet.execute_task.function_executor
+[2m[36m(RolloutWorker pid=3026428)[0m   File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/ray/_private/function_manager.py", line 609, in actor_method_executor
+[2m[36m(RolloutWorker pid=3026428)[0m     return method(__ray_actor, *args, **kwargs)
+[2m[36m(RolloutWorker pid=3026428)[0m   File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/ray/util/tracing/tracing_helper.py", line 451, in _resume_span
+[2m[36m(RolloutWorker pid=3026428)[0m     return method(self, *_args, **_kwargs)
+[2m[36m(RolloutWorker pid=3026428)[0m   File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/ray/actor.py", line 1081, in __ray_terminate__
+[2m[36m(RolloutWorker pid=3026428)[0m     ray.actor.exit_actor()
+[2m[36m(RolloutWorker pid=3026428)[0m   File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/ray/actor.py", line 1160, in exit_actor
+[2m[36m(RolloutWorker pid=3026428)[0m     raise exit
+[2m[36m(RolloutWorker pid=3026428)[0m SystemExit: 0
+[2m[36m(RolloutWorker pid=3026428)[0m 
+[2m[36m(RolloutWorker pid=3026428)[0m During handling of the above exception, another exception occurred:
+[2m[36m(RolloutWorker pid=3026428)[0m 
+[2m[36m(RolloutWorker pid=3026428)[0m Traceback (most recent call last):
+[2m[36m(RolloutWorker pid=3026428)[0m   File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/linecache.py", line 95, in updatecache
+[2m[36m(RolloutWorker pid=3026428)[0m     stat = os.stat(fullname)
+[2m[36m(RolloutWorker pid=3026428)[0m FileNotFoundError: [Errno 2] No such file or directory: 'python/ray/_raylet.pyx'
+[2m[36m(RolloutWorker pid=3026428)[0m 
+[2m[36m(RolloutWorker pid=3026428)[0m During handling of the above exception, another exception occurred:
+[2m[36m(RolloutWorker pid=3026428)[0m 
+[2m[36m(RolloutWorker pid=3026428)[0m Traceback (most recent call last):
+[2m[36m(RolloutWorker pid=3026428)[0m   File "python/ray/_raylet.pyx", line 759, in ray._raylet.task_execution_handler
+[2m[36m(RolloutWorker pid=3026428)[0m   File "python/ray/_raylet.pyx", line 580, in ray._raylet.execute_task
+[2m[36m(RolloutWorker pid=3026428)[0m   File "python/ray/_raylet.pyx", line 618, in ray._raylet.execute_task
+[2m[36m(RolloutWorker pid=3026428)[0m   File "python/ray/includes/libcoreworker.pxi", line 33, in ray._raylet.ProfileEvent.__exit__
+[2m[36m(RolloutWorker pid=3026428)[0m   File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/traceback.py", line 167, in format_exc
+[2m[36m(RolloutWorker pid=3026428)[0m     return "".join(format_exception(*sys.exc_info(), limit=limit, chain=chain))
+[2m[36m(RolloutWorker pid=3026428)[0m   File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/traceback.py", line 120, in format_exception
+[2m[36m(RolloutWorker pid=3026428)[0m     return list(TracebackException(
+[2m[36m(RolloutWorker pid=3026428)[0m   File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/traceback.py", line 508, in __init__
+[2m[36m(RolloutWorker pid=3026428)[0m     self.stack = StackSummary.extract(
+[2m[36m(RolloutWorker pid=3026428)[0m   File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/traceback.py", line 366, in extract
+[2m[36m(RolloutWorker pid=3026428)[0m     f.line
+[2m[36m(RolloutWorker pid=3026428)[0m   File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/traceback.py", line 288, in line
+[2m[36m(RolloutWorker pid=3026428)[0m     self._line = linecache.getline(self.filename, self.lineno).strip()
+[2m[36m(RolloutWorker pid=3026428)[0m   File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/linecache.py", line 16, in getline
+[2m[36m(RolloutWorker pid=3026428)[0m     lines = getlines(filename, module_globals)
+[2m[36m(RolloutWorker pid=3026428)[0m   File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/linecache.py", line 47, in getlines
+[2m[36m(RolloutWorker pid=3026428)[0m     return updatecache(filename, module_globals)
+[2m[36m(RolloutWorker pid=3026428)[0m   File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/linecache.py", line 95, in updatecache
+[2m[36m(RolloutWorker pid=3026428)[0m     stat = os.stat(fullname)
+[2m[36m(RolloutWorker pid=3026428)[0m   File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/ray/worker.py", line 428, in sigterm_handler
+[2m[36m(RolloutWorker pid=3026428)[0m     sys.exit(1)
+[2m[36m(RolloutWorker pid=3026428)[0m SystemExit: 1
+2022-10-17 14:50:01,386	INFO tune.py:626 -- Total run time: 36.64 seconds (35.60 seconds for the tuning loop).
+2022-10-17 14:50:01,405	WARNING experiment_analysis.py:510 -- Could not find best trial. Did you pass the correct `metric` parameter?

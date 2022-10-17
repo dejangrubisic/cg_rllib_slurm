@@ -1,0 +1,322 @@
+2022-10-17 13:01:28,314	INFO services.py:1338 -- View the Ray dashboard at [1m[32mhttp://127.0.0.1:8265[39m[22m
+INFO:ray.worker:Using address auto set in the environment variable RAY_ADDRESS
+2022-10-17 13:01:50,594	INFO worker.py:842 -- Connecting to existing Ray cluster at address: 100.97.70.163:6888
+[2022-10-17 13:01:50,861 I 3543651 3543651] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to -1
+DEBUG:compiler_gym.service.connection:Exec `./example_service.py --working_dir=/dev/shm/compiler_gym_dejang/s/1017T130151-023096-565a --alsologtostderr -v=1 --logbuflevel=-1`
+I1017 13:01:55.142347 140133543183168 create_and_run_compiler_gym_service.py:117] Service /dev/shm/compiler_gym_dejang/s/1017T130151-023096-565a listening on 34809, PID = 3546847
+I1017 13:01:55.922102 140131486918400 compiler_gym_service.py:105] GetSpaces()
+DEBUG:compiler_gym.service.client_service_compiler_env:Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/012345
+I1017 13:01:55.950511 140133543183168 create_and_run_compiler_gym_service.py:48] Service received signal: 15
+I1017 13:01:55.951027 140133543183168 create_and_run_compiler_gym_service.py:130] Shutting down the RPC service
+I1017 13:01:55.951798 140133543183168 create_and_run_compiler_gym_service.py:133] Service closed
+DEBUG:compiler_gym.service.connection:Exec `./example_service.py --working_dir=/dev/shm/compiler_gym_dejang/s/1017T130156-518877-1a07 --alsologtostderr -v=1 --logbuflevel=-1`
+I1017 13:01:59.783206 139768101552960 create_and_run_compiler_gym_service.py:117] Service /dev/shm/compiler_gym_dejang/s/1017T130156-518877-1a07 listening on 45113, PID = 3547172
+I1017 13:02:00.515516 139766254909184 compiler_gym_service.py:105] GetSpaces()
+DEBUG:compiler_gym.service.client_service_compiler_env:Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/012345
+I1017 13:02:00.544189 139768101552960 create_and_run_compiler_gym_service.py:48] Service received signal: 15
+I1017 13:02:00.544746 139768101552960 create_and_run_compiler_gym_service.py:130] Shutting down the RPC service
+I1017 13:02:00.545746 139768101552960 create_and_run_compiler_gym_service.py:133] Service closed
+DEBUG:compiler_gym.service.connection:Exec `./example_service.py --working_dir=/dev/shm/compiler_gym_dejang/s/1017T130200-964752-858c --alsologtostderr -v=1 --logbuflevel=-1`
+I1017 13:02:04.591655 140020654826304 create_and_run_compiler_gym_service.py:117] Service /dev/shm/compiler_gym_dejang/s/1017T130200-964752-858c listening on 43003, PID = 3548107
+I1017 13:02:04.963711 140018601416448 compiler_gym_service.py:105] GetSpaces()
+DEBUG:compiler_gym.service.client_service_compiler_env:Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/012345
+DEBUG:compiler_gym.service.client_service_compiler_env:Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/410532
+I1017 13:02:04.994222 140018601416448 compiler_gym_service.py:114] StartSession(id=0, benchmark=benchmark://mm32_8_16_8_4_16-v0/410532), 1 active sessions
+I1017 13:02:04.995411 140018601416448 benchmark_cache.py:76] Cached benchmark benchmark://mm32_8_16_8_4_16-v0/410532. Cache size = 343 bytes, 1 items
+I1017 13:02:04.996214 140018601416448 compiler_gym_service.py:114] StartSession(id=0, benchmark=benchmark://mm32_8_16_8_4_16-v0/410532), 1 active sessions
+I1017 13:02:04.996392 140018601416448 example_service.py:280] Started a compilation session for benchmark://mm32_8_16_8_4_16-v0/410532
+E1017 13:02:04.996506 140018601416448 example_service.py:284] CRITICAL - 
+
+Working_dir = /dev/shm/compiler_gym_dejang/s/1017T130200-964752-858c
+
+I1017 13:02:05.000362 140018601416448 loop_tool_env.py:83] for m_98 in 4 : L0  <<<<<< cursor (line 0 )
+ for n_137 in 8 : L1  
+  for m_98' in 32 : L2  
+   for n_137' in 16 : L3  
+    for k_99 in 8 : L4  
+     for k_99' in 16 : L5  
+      %2[m_98, k_99, n_137] <- multiply(%0, %1)  
+      %3[m_98, n_137] <- add(%2)  
+for m_98 in 32 : L8  
+ for m_98' in 4 : L9  
+  for n_137 in 128 : L10  
+   %4[m_98, n_137] <- write(%3)  
+
+I1017 13:02:05.026551 140018601416448 example_service.py:456] Computing observation from space loops_tensor
+I1017 13:02:05.029577 140018601416448 compiler_gym_service.py:188] Step()
+I1017 13:02:05.029829 140018601416448 example_service.py:456] Computing observation from space flops_loop_nest_tensor
+I1017 13:02:05.276282 140018601416448 loop_tool_env.py:150] <<<<<<<<<<<<<<< Reward = 2.080497616579283 GFLOPS >>>>>>>>>>>>>>>
+DEBUG:compiler_gym.service.client_service_compiler_env:Ending session 0
+I1017 13:02:05.278764 140018601416448 compiler_gym_service.py:176] EndSession(id=0), 0 sessions remaining
+DEBUG:compiler_gym.service.client_service_compiler_env:Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/134025
+I1017 13:02:05.279886 140018601416448 compiler_gym_service.py:114] StartSession(id=1, benchmark=benchmark://mm32_8_16_8_4_16-v0/134025), 1 active sessions
+I1017 13:02:05.280840 140018601416448 benchmark_cache.py:76] Cached benchmark benchmark://mm32_8_16_8_4_16-v0/134025. Cache size = 686 bytes, 2 items
+I1017 13:02:05.281490 140018601416448 compiler_gym_service.py:114] StartSession(id=1, benchmark=benchmark://mm32_8_16_8_4_16-v0/134025), 1 active sessions
+I1017 13:02:05.281632 140018601416448 example_service.py:280] Started a compilation session for benchmark://mm32_8_16_8_4_16-v0/134025
+E1017 13:02:05.281733 140018601416448 example_service.py:284] CRITICAL - 
+
+Working_dir = /dev/shm/compiler_gym_dejang/s/1017T130200-964752-858c
+
+I1017 13:02:05.282343 140018601416448 loop_tool_env.py:83] for n_137 in 8 : L0  <<<<<< cursor (line 0 )
+ for k_99 in 8 : L1  
+  for m_98 in 4 : L2  
+   for m_98' in 32 : L3  
+    for k_99' in 16 : L4  
+     for n_137' in 16 : L5  
+      %2[m_98, k_99, n_137] <- multiply(%0, %1)  
+      %3[m_98, n_137] <- add(%2)  
+for m_98 in 32 : L8  
+ for m_98' in 4 : L9  
+  for n_137 in 128 : L10  
+   %4[m_98, n_137] <- write(%3)  
+
+I1017 13:02:05.282612 140018601416448 example_service.py:456] Computing observation from space loops_tensor
+I1017 13:02:05.284928 140018601416448 compiler_gym_service.py:188] Step()
+I1017 13:02:05.285084 140018601416448 example_service.py:456] Computing observation from space flops_loop_nest_tensor
+I1017 13:02:05.312129 140018601416448 loop_tool_env.py:150] <<<<<<<<<<<<<<< Reward = 20.66434451872909 GFLOPS >>>>>>>>>>>>>>>
+DEBUG:compiler_gym.service.client_service_compiler_env:Ending session 1
+I1017 13:02:05.313926 140018601416448 compiler_gym_service.py:176] EndSession(id=1), 0 sessions remaining
+DEBUG:compiler_gym.service.client_service_compiler_env:Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/504213
+I1017 13:02:05.314986 140018601416448 compiler_gym_service.py:114] StartSession(id=2, benchmark=benchmark://mm32_8_16_8_4_16-v0/504213), 1 active sessions
+I1017 13:02:05.315981 140018601416448 benchmark_cache.py:76] Cached benchmark benchmark://mm32_8_16_8_4_16-v0/504213. Cache size = 1029 bytes, 3 items
+I1017 13:02:05.316679 140018601416448 compiler_gym_service.py:114] StartSession(id=2, benchmark=benchmark://mm32_8_16_8_4_16-v0/504213), 1 active sessions
+I1017 13:02:05.316830 140018601416448 example_service.py:280] Started a compilation session for benchmark://mm32_8_16_8_4_16-v0/504213
+E1017 13:02:05.316929 140018601416448 example_service.py:284] CRITICAL - 
+
+Working_dir = /dev/shm/compiler_gym_dejang/s/1017T130200-964752-858c
+
+I1017 13:02:05.317423 140018601416448 loop_tool_env.py:83] for n_137 in 16 : L0  <<<<<< cursor (line 0 )
+ for m_98 in 32 : L1  
+  for m_98' in 4 : L2  
+   for k_99 in 16 : L3  
+    for n_137' in 8 : L4  
+     for k_99' in 8 : L5  
+      %2[m_98, k_99, n_137] <- multiply(%0, %1)  
+      %3[m_98, n_137] <- add(%2)  
+for m_98 in 32 : L8  
+ for m_98' in 4 : L9  
+  for n_137 in 128 : L10  
+   %4[m_98, n_137] <- write(%3)  
+
+I1017 13:02:05.317823 140018601416448 example_service.py:456] Computing observation from space loops_tensor
+I1017 13:02:05.320138 140018601416448 compiler_gym_service.py:188] Step()
+I1017 13:02:05.320283 140018601416448 example_service.py:456] Computing observation from space flops_loop_nest_tensor
+I1017 13:02:05.420238 140018601416448 loop_tool_env.py:150] <<<<<<<<<<<<<<< Reward = 5.5804779917057274 GFLOPS >>>>>>>>>>>>>>>
+I1017 13:02:05.421791 140018601416448 compiler_gym_service.py:176] EndSession(id=2), 0 sessions remaining
+I1017 13:02:05.422193 140020654826304 create_and_run_compiler_gym_service.py:48] Service received signal: 15
+I1017 13:02:05.422582 140020654826304 create_and_run_compiler_gym_service.py:130] Shutting down the RPC service
+I1017 13:02:05.423228 140020654826304 create_and_run_compiler_gym_service.py:133] Service closed
+/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/ray/tune/callback.py:217: FutureWarning: Please update `setup` method in callback `<class 'ray.tune.integration.wandb.WandbLoggerCallback'>` to match the method signature in `ray.tune.callback.Callback`.
+  warnings.warn(
+[2m[33m(raylet)[0m [2022-10-17 13:02:07,506 W 3548413 3548413] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:07,506 I 3548413 3548413] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+DEBUG:git.cmd:Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/private/home/dejang/tools/cg_rllib_slurm, universal_newlines=False, shell=None, istream=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG:urllib3.connectionpool:https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 521
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG:urllib3.connectionpool:https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 325
+wandb: Currently logged in as: dejang. Use `wandb login --relogin` to force relogin
+wandb: WARNING Tried to auto resume run with id 4cc88_00000 but id 9303e_00000 is set.
+DEBUG:git.cmd:Popen(['git', 'cat-file', '--batch-check'], cwd=/private/home/dejang/tools/cg_rllib_slurm, universal_newlines=False, shell=None, istream=<valid stream>)
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /private/home/dejang/tools/cg_rllib_slurm/wandb/run-20221017_130211-9303e_00000
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run PPO_compiler_gym_9303e_00000
+wandb: ⭐️ View project at https://wandb.ai/dejang/loop_tool_agent_split
+wandb: 🚀 View run at https://wandb.ai/dejang/loop_tool_agent_split/runs/9303e_00000
+[2m[36m(PPO pid=3548413)[0m 2022-10-17 13:02:18,833	INFO ppo.py:166 -- In multi-agent mode, policies will be optimized sequentially by the multi-GPU optimizer. Consider setting simple_optimizer=True if this doesn't work for you.
+[2m[33m(raylet)[0m [2022-10-17 13:02:30,712 W 3549234 3549234] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:30,712 I 3549234 3549234] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:30,727 W 3549231 3549231] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:30,727 I 3549231 3549231] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:30,753 W 3549230 3549230] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:30,753 I 3549230 3549230] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:31,473 W 3549242 3549242] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:31,473 I 3549242 3549242] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:32,138 W 3549271 3549271] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:32,138 I 3549271 3549271] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:32,864 W 3549253 3549253] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:32,864 I 3549253 3549253] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:33,753 W 3549283 3549283] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:33,753 I 3549283 3549283] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:34,089 W 3549297 3549297] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:34,089 I 3549297 3549297] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:35,648 W 3549357 3549357] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:35,648 I 3549357 3549357] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:35,660 W 3549329 3549329] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:35,660 I 3549329 3549329] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:35,994 W 3549375 3549375] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:35,994 I 3549375 3549375] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:37,625 W 3549395 3549395] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:37,625 I 3549395 3549395] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:38,499 W 3549413 3549413] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:38,499 I 3549413 3549413] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:39,214 W 3549432 3549432] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:39,214 I 3549432 3549432] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:40,712 W 3550103 3550103] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:40,712 I 3550103 3550103] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:42,156 W 3550145 3550145] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:42,156 I 3550145 3550145] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:42,587 W 3550177 3550177] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:42,587 I 3550177 3550177] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:43,674 W 3550239 3550239] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:43,674 I 3550239 3550239] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:44,113 W 3550207 3550207] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:44,113 I 3550207 3550207] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:45,210 W 3550273 3550273] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:45,211 I 3550273 3550273] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:46,697 W 3550356 3550356] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:46,697 I 3550356 3550356] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:46,726 W 3550376 3550376] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:46,726 I 3550376 3550376] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:48,518 W 3550409 3550409] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:48,518 I 3550409 3550409] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:49,735 W 3550434 3550434] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:49,735 I 3550434 3550434] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:50,335 W 3550456 3550456] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:50,335 I 3550456 3550456] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:51,339 W 3550947 3550947] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:51,339 I 3550947 3550947] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:53,304 W 3551189 3551189] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:53,304 I 3551189 3551189] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:53,547 W 3551139 3551139] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:53,547 I 3551139 3551139] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:56,093 W 3551282 3551282] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:56,093 I 3551282 3551282] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:57,792 W 3551334 3551334] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:57,792 I 3551334 3551334] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:02:59,172 W 3551387 3551387] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:02:59,172 I 3551387 3551387] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:00,439 W 3551435 3551435] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:00,440 I 3551435 3551435] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:01,819 W 3551483 3551483] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:01,820 I 3551483 3551483] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:02,764 W 3551564 3551564] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:02,764 I 3551564 3551564] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:04,937 W 3551593 3551593] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:04,937 I 3551593 3551593] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:05,812 E 3551593 3551593] core_worker.cc:451: Failed to register worker 91d15a21fcabcddbde41f25e154f392eb71993b80c3aea92aa3a1fe1 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:06,254 W 3551694 3551694] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:06,254 I 3551694 3551694] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:07,422 E 3551694 3551694] core_worker.cc:451: Failed to register worker 80ee7d2ce8a42624a40b6605fee36a32be309587a3cf097e64bd28cd to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:07,811 W 3551748 3551748] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:07,811 I 3551748 3551748] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:09,031 W 3551782 3551782] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:09,031 I 3551782 3551782] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:09,849 E 3551748 3551748] core_worker.cc:451: Failed to register worker 2920261b2efa2766e0e985bc6cee066f8bee51970c2c447f4ec7f62a to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:10,786 W 3551855 3551855] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:11,014 I 3551855 3551855] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:11,170 E 3551782 3551782] core_worker.cc:451: Failed to register worker fa7100afe6615fe0889246dff5ce7b3c54cc5ca285fa7521582b3d91 to Raylet. Invalid: Invalid: Unknown worker
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): o151352.ingest.sentry.io:443
+DEBUG:urllib3.connectionpool:https://o151352.ingest.sentry.io:443 "POST /api/5288891/envelope/ HTTP/1.1" 200 2
+[2m[33m(raylet)[0m [2022-10-17 13:03:13,057 W 3551922 3551922] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:13,057 I 3551922 3551922] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:13,499 E 3551855 3551855] core_worker.cc:451: Failed to register worker 07e030611cc0322d374247c313a25012a578f2eb8e8ea7476a2336e6 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:14,129 W 3551980 3551980] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:14,129 I 3551980 3551980] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:14,643 E 3551922 3551922] core_worker.cc:451: Failed to register worker 2f119586672d38aa19f1859d873e61303117fd5f23b348feccceb04e to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:14,855 E 3551980 3551980] core_worker.cc:451: Failed to register worker c5134eaf84c1271a17fa1ca0516f381a5ea92cecf8f3c88a2424d053 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:16,051 W 3552044 3552044] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:16,051 I 3552044 3552044] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:16,802 E 3552044 3552044] core_worker.cc:451: Failed to register worker 3cc7b1499c19bf113f9b77eb9a311109435397c737672ac94ef070ab to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:17,922 W 3552170 3552170] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:17,922 I 3552170 3552170] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:18,122 W 3552102 3552102] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:18,123 I 3552102 3552102] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:20,408 E 3552170 3552170] core_worker.cc:451: Failed to register worker 3ce9587aed03efd785aa3696fde4ee16c2421f89c9e8c615d7480857 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:20,700 E 3552102 3552102] core_worker.cc:451: Failed to register worker 522d01cb5ae1ffad13ab15306e22421c184fb4655745c0da7510d320 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:20,994 W 3552246 3552246] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:20,994 I 3552246 3552246] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:22,111 W 3552335 3552335] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:22,199 I 3552335 3552335] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:24,663 E 3552246 3552246] core_worker.cc:451: Failed to register worker 9e5a740fd25469744add628f8d015b22756b9fc5241206ae9719585e to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:25,321 W 3552418 3552418] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:25,321 I 3552418 3552418] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:26,796 W 3552467 3552467] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:26,796 I 3552467 3552467] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:27,157 E 3552335 3552335] core_worker.cc:451: Failed to register worker a83837c0f1c5d7a97cae531f2ce49518e135b9d6fc9e63ad1af46374 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:29,010 W 3552576 3552576] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:29,010 I 3552576 3552576] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:30,264 E 3552418 3552418] core_worker.cc:451: Failed to register worker e93493d49bce651336782d3c2dbc3281960f37f4c8fd351d887c625b to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:31,273 W 3553130 3553130] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:31,273 I 3553130 3553130] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:31,829 E 3552467 3552467] core_worker.cc:451: Failed to register worker d0870e39d9d7f8dbb6fa6e7b0a27b8d997aac9ddefae194bf13cc0db to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:34,146 E 3552576 3552576] core_worker.cc:451: Failed to register worker 76755a09a7530d0229455a793ba29f23536ee42a1525907f2b3821b8 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:34,553 W 3553394 3553394] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:34,553 I 3553394 3553394] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:35,264 W 3553496 3553496] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:35,264 I 3553496 3553496] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:36,492 W 3553587 3553587] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:36,492 I 3553587 3553587] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:38,145 E 3553130 3553130] core_worker.cc:451: Failed to register worker f0bfaa5766e92c86c5a0ac5ec0b17ef59759502014a285da9a6d379b to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:40,565 W 3553684 3553684] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:40,565 I 3553684 3553684] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:42,045 W 3553784 3553784] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:42,146 I 3553784 3553784] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:43,526 W 3554259 3554259] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:43,526 I 3554259 3554259] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:45,623 W 3554640 3554640] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:45,623 I 3554640 3554640] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:46,842 E 3553394 3553394] core_worker.cc:451: Failed to register worker 0b7413b2715a67ba80e461ac2b88153e3829d54dc51c2e2c8ad7f683 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:51,241 W 3554841 3554841] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:51,241 I 3554841 3554841] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:51,250 W 3554735 3554735] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:51,250 I 3554735 3554735] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:52,000 E 3553496 3553496] core_worker.cc:451: Failed to register worker c351881acb377587115a9c2daa202a32d351fac74b47c82bdc5d3924 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:55,795 W 3554954 3554954] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:55,795 I 3554954 3554954] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:57,198 W 3555117 3555117] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:57,198 I 3555117 3555117] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:57,460 E 3553587 3553587] core_worker.cc:451: Failed to register worker fc613b9018ad10db336535506e2357b30ace8a67c01a9b9cbc5aad9d to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:03:58,275 W 3555053 3555053] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:58,275 I 3555053 3555053] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:03:59,742 W 3555224 3555224] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:03:59,742 I 3555224 3555224] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:00,330 W 3555164 3555164] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:00,330 I 3555164 3555164] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:00,909 W 3555249 3555249] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:00,909 I 3555249 3555249] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:02,216 W 3555203 3555203] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:02,216 I 3555203 3555203] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:03,004 E 3553684 3553684] core_worker.cc:451: Failed to register worker 5338147bc74f444e388a4e8dfad91be516b6787cf0c20304f2462564 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:04:03,910 W 3555272 3555272] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:03,910 I 3555272 3555272] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:04,591 W 3555302 3555302] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:04,591 I 3555302 3555302] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:05,985 W 3555371 3555371] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:05,985 I 3555371 3555371] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:08,024 W 3555467 3555467] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:08,024 I 3555467 3555467] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:08,584 E 3553784 3553784] core_worker.cc:451: Failed to register worker b3360be5cedcd75ec451829834480951b6444eecc1ba513fbe4ea16a to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:04:08,647 W 3555422 3555422] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:08,647 I 3555422 3555422] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:09,326 W 3555437 3555437] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:09,326 I 3555437 3555437] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:10,190 W 3555570 3555570] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:10,190 I 3555570 3555570] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:10,629 W 3555505 3555505] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:10,629 I 3555505 3555505] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:11,246 W 3555605 3555605] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:11,246 I 3555605 3555605] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:12,622 W 3555633 3555633] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:12,622 I 3555633 3555633] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:13,327 E 3554259 3554259] core_worker.cc:451: Failed to register worker d5d3128e2b476749e7873b33e5ce3c5249149cd6b5c3b6fcad8e7d76 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:04:13,335 W 3556400 3556400] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:13,335 I 3556400 3556400] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:14,896 W 3555535 3555535] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:14,896 I 3555535 3555535] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:16,524 W 3556048 3556048] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:16,524 I 3556048 3556048] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:18,154 W 3556354 3556354] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:18,154 I 3556354 3556354] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:18,156 W 3556445 3556445] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:18,156 I 3556445 3556445] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:19,057 W 3556480 3556480] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:19,057 I 3556480 3556480] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:19,228 W 3556579 3556579] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:19,228 I 3556579 3556579] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+[2m[33m(raylet)[0m [2022-10-17 13:04:20,325 E 3554640 3554640] core_worker.cc:451: Failed to register worker ab9c2157827ef80104aa2791b48dd415063969b604664c13bf737da5 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 13:04:20,737 W 3556534 3556534] logging.cc:189: Unrecognized setting of RAY_BACKEND_LOG_LEVEL=0
+[2m[33m(raylet)[0m [2022-10-17 13:04:20,737 I 3556534 3556534] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to 0
+slurmstepd: error: *** STEP 65664676.1 ON learnfair0545 CANCELLED AT 2022-10-17T13:04:22 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 65664676 ON learnfair0545 CANCELLED AT 2022-10-17T13:04:22 DUE TO TIME LIMIT ***

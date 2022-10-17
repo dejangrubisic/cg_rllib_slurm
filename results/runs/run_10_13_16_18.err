@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "/private/home/dejang/.conda/envs/compiler_gym/bin/ray", line 8, in <module>
+    sys.exit(main())
+  File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/ray/scripts/scripts.py", line 1989, in main
+    return cli()
+  File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/click/core.py", line 1128, in __call__
+    return self.main(*args, **kwargs)
+  File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/click/core.py", line 1053, in main
+    rv = self.invoke(ctx)
+  File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/click/core.py", line 1659, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/click/core.py", line 1395, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/click/core.py", line 754, in invoke
+    return __callback(*args, **kwargs)
+  File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/ray/scripts/scripts.py", line 627, in start
+    raise ConnectionError(
+ConnectionError: Ray is already running at 100.97.90.35:6888. Please specify a different port using the `--port` command to `ray start`.
+srun: error: learnfair0385: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=65571674.1
+/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: libtorch_cuda_cu.so: cannot open shared object file: No such file or directory
+  warn(f"Failed to load image Python extension: {e}")
+2022-10-13 16:27:09,326	INFO worker.py:842 -- Connecting to existing Ray cluster at address: 100.97.90.35:6888
+/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: libtorch_cuda_cu.so: cannot open shared object file: No such file or directory
+  warn(f"Failed to load image Python extension: {e}")
+2022-10-13 16:27:29,368	ERROR node.py:1286 -- ERROR as 
+2022-10-13 16:27:51,411	ERROR node.py:1286 -- ERROR as 
+slurmstepd: error: *** JOB 65571674 ON learnfair0385 CANCELLED AT 2022-10-13T16:27:54 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 65571633 ON learnfair0385 CANCELLED AT 2022-10-13T16:27:54 DUE TO TIME LIMIT ***

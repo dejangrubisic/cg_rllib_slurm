@@ -1,0 +1,1231 @@
+Address Head: 100.97.70.203:6888
+RAY_ADDRESS: auto
+REDIS_PASSWORD: 52a5f426-86d3-42eb-bc61-f3efb83eaca2
+Starting HEAD at learnfair0565
+SUCCESS
+Worker number = 0
+Starting command: 
+2022-10-13 16:41:53,255	INFO scripts.py:612 -- Local node IP: 100.97.70.203
+2022-10-13 16:42:00,268	SUCC scripts.py:651 -- --------------------
+2022-10-13 16:42:00,268	SUCC scripts.py:652 -- Ray runtime started.
+2022-10-13 16:42:00,268	SUCC scripts.py:653 -- --------------------
+2022-10-13 16:42:00,268	INFO scripts.py:655 -- Next steps
+2022-10-13 16:42:00,268	INFO scripts.py:656 -- To connect to this Ray runtime from another node, run
+2022-10-13 16:42:00,268	INFO scripts.py:660 --   ray start --address='100.97.70.203:6888' --redis-password='52a5f426-86d3-42eb-bc61-f3efb83eaca2'
+2022-10-13 16:42:00,268	INFO scripts.py:665 -- Alternatively, use the following Python code:
+2022-10-13 16:42:00,269	INFO scripts.py:668 -- import ray
+2022-10-13 16:42:00,269	INFO scripts.py:669 -- ray.init(address='auto', _redis_password='52a5f426-86d3-42eb-bc61-f3efb83eaca2')
+2022-10-13 16:42:00,269	INFO scripts.py:677 -- To connect to this Ray runtime from outside of the cluster, for example to
+2022-10-13 16:42:00,269	INFO scripts.py:679 -- connect to a remote cluster from your laptop directly, use the following
+2022-10-13 16:42:00,269	INFO scripts.py:681 -- Python code:
+2022-10-13 16:42:00,269	INFO scripts.py:684 -- import ray
+2022-10-13 16:42:00,269	INFO scripts.py:685 -- ray.init(address='ray://<head_node_ip_address>:10001')
+2022-10-13 16:42:00,269	INFO scripts.py:691 -- If connection fails, check your firewall settings and network configuration.
+2022-10-13 16:42:00,269	INFO scripts.py:696 -- To terminate the Ray runtime, run
+2022-10-13 16:42:00,270	INFO scripts.py:697 --   ray stop
+2022-10-13 16:42:00,270	INFO scripts.py:765 -- --block
+2022-10-13 16:42:00,270	INFO scripts.py:766 -- This command will now block until terminated by a signal.
+2022-10-13 16:42:00,270	INFO scripts.py:768 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly.
+Action space: Commandline([-break-crit-edges -early-cse-memssa -gvn-hoist -gvn -instcombine -instsimplify -jump-threading -loop-reduce -loop-rotate -loop-versioning -mem2reg -newgvn -reg2mem -simplifycfg -sroa])
+Observation space: Box([0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0], [9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807], (56,), int64)
+Reward space: IrInstructionCountOz
+Number of benchmarks for training: 50
+Number of benchmarks for validation: 5
+Number of benchmarks for testing: 12
+benchmark://npb-v0/1
+benchmark://npb-v0/2
+benchmark://npb-v0/3
+auto 100.97.70.203 52a5f426-86d3-42eb-bc61-f3efb83eaca2
+--- 2
+1013 16:42:31 ray.worker] Using address auto set in the environment variable RAY_ADDRESS
+--- 3
+== Status ==
+Current time: 2022-10-13 16:42:32 (running for 00:00:00.19)
+Memory usage on this node: 78.0/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 0/80 CPUs, 0/1 GPUs, 0.0/291.63 GiB heap, 0.0/128.98 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-13_16-42-32
+Number of trials: 1/1 (1 PENDING)
++------------------------------+----------+-------+
+| Trial name                   | status   | loc   |
+|------------------------------+----------+-------|
+| PPO_compiler_gym_b4d38_00000 | PENDING  |       |
++------------------------------+----------+-------+
+
+
+== Status ==
+Current time: 2022-10-13 16:42:50 (running for 00:00:18.49)
+Memory usage on this node: 78.8/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/291.63 GiB heap, 0.0/128.98 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-13_16-42-32
+Number of trials: 1/1 (1 RUNNING)
++------------------------------+----------+-----------------------+
+| Trial name                   | status   | loc                   |
+|------------------------------+----------+-----------------------|
+| PPO_compiler_gym_b4d38_00000 | RUNNING  | 100.97.70.203:1999580 |
++------------------------------+----------+-----------------------+
+
+
+Result for PPO_compiler_gym_b4d38_00000:
+  agent_timesteps_total: 5
+  custom_metrics: {}
+  date: 2022-10-13_16-42-51
+  done: false
+  episode_len_mean: 5.0
+  episode_media: {}
+  episode_reward_max: 0.6375838926174497
+  episode_reward_mean: 0.6375838926174497
+  episode_reward_min: 0.6375838926174497
+  episodes_this_iter: 1
+  episodes_total: 1
+  experiment_id: 50affaed481549309c698fe157b954aa
+  hostname: learnfair0565
+  info:
+    learner:
+      default_policy:
+        custom_metrics: {}
+        learner_stats:
+          cur_kl_coeff: 0.20000000298023224
+          cur_lr: 4.999999873689376e-05
+          entropy: 2.7062771320343018
+          entropy_coeff: 0.0
+          kl: 0.0015765030402690172
+          model: {}
+          policy_loss: -0.09374944120645523
+          total_loss: 0.0652589276432991
+          vf_explained_var: 0.02418994903564453
+          vf_loss: 0.15869306027889252
+    num_agent_steps_sampled: 5
+    num_agent_steps_trained: 5
+    num_steps_sampled: 5
+    num_steps_trained: 5
+  iterations_since_restore: 1
+  node_ip: 100.97.70.203
+  num_healthy_workers: 1
+  off_policy_estimator: {}
+  perf:
+    cpu_util_percent: 9.2
+    ram_util_percent: 15.6
+  pid: 1999580
+  policy_reward_max: {}
+  policy_reward_mean: {}
+  policy_reward_min: {}
+  sampler_perf:
+    mean_action_processing_ms: 0.09918212890625
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 23.8494873046875
+    mean_inference_ms: 6.066481272379557
+    mean_raw_obs_processing_ms: 24.449825286865234
+  time_since_restore: 0.6574981212615967
+  time_this_iter_s: 0.6574981212615967
+  time_total_s: 0.6574981212615967
+  timers:
+    learn_throughput: 16.729
+    learn_time_ms: 298.885
+    load_throughput: 28263.504
+    load_time_ms: 0.177
+    sample_throughput: 13.979
+    sample_time_ms: 357.669
+    update_time_ms: 2.719
+  timestamp: 1665704571
+  timesteps_since_restore: 0
+  timesteps_this_iter: 0
+  timesteps_total: 5
+  training_iteration: 1
+  trial_id: b4d38_00000
+  
+== Status ==
+Current time: 2022-10-13 16:42:51 (running for 00:00:19.20)
+Memory usage on this node: 78.8/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/291.63 GiB heap, 0.0/128.98 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-13_16-42-32
+Number of trials: 1/1 (1 RUNNING)
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                   | status   | loc                   |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_compiler_gym_b4d38_00000 | RUNNING  | 100.97.70.203:1999580 |      1 |         0.657498 |    5 | 0.637584 |             0.637584 |             0.637584 |                  5 |
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+Result for PPO_compiler_gym_b4d38_00000:
+  agent_timesteps_total: 95
+  custom_metrics: {}
+  date: 2022-10-13_16-42-56
+  done: false
+  episode_len_mean: 5.0
+  episode_media: {}
+  episode_reward_max: 89.0
+  episode_reward_mean: 5.158688799707868
+  episode_reward_min: -1.8409090909090917
+  episodes_this_iter: 1
+  episodes_total: 19
+  experiment_id: 50affaed481549309c698fe157b954aa
+  hostname: learnfair0565
+  info:
+    learner:
+      default_policy:
+        custom_metrics: {}
+        learner_stats:
+          cur_kl_coeff: 0.004687500186264515
+          cur_lr: 4.999999873689376e-05
+          entropy: 2.144508123397827
+          entropy_coeff: 0.0
+          kl: 0.00581232737749815
+          model: {}
+          policy_loss: -0.13201414048671722
+          total_loss: 4.505651473999023
+          vf_explained_var: -1.0
+          vf_loss: 4.637638568878174
+    num_agent_steps_sampled: 95
+    num_agent_steps_trained: 95
+    num_steps_sampled: 95
+    num_steps_trained: 95
+    num_steps_trained_this_iter: 0
+  iterations_since_restore: 19
+  node_ip: 100.97.70.203
+  num_healthy_workers: 1
+  off_policy_estimator: {}
+  perf: {}
+  pid: 1999580
+  policy_reward_max: {}
+  policy_reward_mean: {}
+  policy_reward_min: {}
+  sampler_perf:
+    mean_action_processing_ms: 0.07737290658660749
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 6.1520587502857085
+    mean_inference_ms: 2.075051662048883
+    mean_raw_obs_processing_ms: 31.87784979309761
+  time_since_restore: 5.477619171142578
+  time_this_iter_s: 0.18547296524047852
+  time_total_s: 5.477619171142578
+  timers:
+    learn_throughput: 76.467
+    learn_time_ms: 65.387
+    load_throughput: 28544.331
+    load_time_ms: 0.175
+    sample_throughput: 15.771
+    sample_time_ms: 317.033
+    update_time_ms: 1.772
+  timestamp: 1665704576
+  timesteps_since_restore: 0
+  timesteps_this_iter: 0
+  timesteps_total: 95
+  training_iteration: 19
+  trial_id: b4d38_00000
+  
+== Status ==
+Current time: 2022-10-13 16:42:56 (running for 00:00:24.34)
+Memory usage on this node: 78.8/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/291.63 GiB heap, 0.0/128.98 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-13_16-42-32
+Number of trials: 1/1 (1 RUNNING)
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                   | status   | loc                   |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_compiler_gym_b4d38_00000 | RUNNING  | 100.97.70.203:1999580 |     19 |          5.47762 |   95 |  5.15869 |                   89 |             -1.84091 |                  5 |
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+Result for PPO_compiler_gym_b4d38_00000:
+  agent_timesteps_total: 185
+  custom_metrics: {}
+  date: 2022-10-13_16-43-02
+  done: false
+  episode_len_mean: 5.0
+  episode_media: {}
+  episode_reward_max: 98.0
+  episode_reward_mean: 5.621475635036998
+  episode_reward_min: -1.8409090909090917
+  episodes_this_iter: 1
+  episodes_total: 37
+  experiment_id: 50affaed481549309c698fe157b954aa
+  hostname: learnfair0565
+  info:
+    learner:
+      default_policy:
+        custom_metrics: {}
+        learner_stats:
+          cur_kl_coeff: 0.0002197265566792339
+          cur_lr: 4.999999873689376e-05
+          entropy: 1.45159113407135
+          entropy_coeff: 0.0
+          kl: 0.002660897094756365
+          model: {}
+          policy_loss: -0.030948255211114883
+          total_loss: 4.008867263793945
+          vf_explained_var: 0.8826578855514526
+          vf_loss: 4.039815425872803
+    num_agent_steps_sampled: 185
+    num_agent_steps_trained: 185
+    num_steps_sampled: 185
+    num_steps_trained: 185
+    num_steps_trained_this_iter: 0
+  iterations_since_restore: 37
+  node_ip: 100.97.70.203
+  num_healthy_workers: 1
+  off_policy_estimator: {}
+  perf:
+    cpu_util_percent: 8.0
+    ram_util_percent: 15.6
+  pid: 1999580
+  policy_reward_max: {}
+  policy_reward_mean: {}
+  policy_reward_min: {}
+  sampler_perf:
+    mean_action_processing_ms: 0.07414566056872039
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 4.441390439139563
+    mean_inference_ms: 1.6401095477357706
+    mean_raw_obs_processing_ms: 33.89147904467673
+  time_since_restore: 10.533855199813843
+  time_this_iter_s: 0.5143978595733643
+  time_total_s: 10.533855199813843
+  timers:
+    learn_throughput: 75.614
+    learn_time_ms: 66.125
+    load_throughput: 28803.077
+    load_time_ms: 0.174
+    sample_throughput: 16.299
+    sample_time_ms: 306.769
+    update_time_ms: 1.697
+  timestamp: 1665704582
+  timesteps_since_restore: 0
+  timesteps_this_iter: 0
+  timesteps_total: 185
+  training_iteration: 37
+  trial_id: b4d38_00000
+  
+== Status ==
+Current time: 2022-10-13 16:43:02 (running for 00:00:29.78)
+Memory usage on this node: 78.8/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/291.63 GiB heap, 0.0/128.98 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-13_16-42-32
+Number of trials: 1/1 (1 RUNNING)
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                   | status   | loc                   |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_compiler_gym_b4d38_00000 | RUNNING  | 100.97.70.203:1999580 |     37 |          10.5339 |  185 |  5.62148 |                   98 |             -1.84091 |                  5 |
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+Result for PPO_compiler_gym_b4d38_00000:
+  agent_timesteps_total: 340
+  custom_metrics: {}
+  date: 2022-10-13_16-43-07
+  done: false
+  episode_len_mean: 5.0
+  episode_media: {}
+  episode_reward_max: 98.0
+  episode_reward_mean: 5.135525027299524
+  episode_reward_min: -1.8409090909090917
+  episodes_this_iter: 1
+  episodes_total: 68
+  experiment_id: 50affaed481549309c698fe157b954aa
+  hostname: learnfair0565
+  info:
+    learner:
+      default_policy:
+        custom_metrics: {}
+        learner_stats:
+          cur_kl_coeff: 1.018401221131171e-07
+          cur_lr: 4.999999873689376e-05
+          entropy: 1.9057365655899048
+          entropy_coeff: 0.0
+          kl: 0.036940012127161026
+          model: {}
+          policy_loss: -0.13470178842544556
+          total_loss: 0.8710706830024719
+          vf_explained_var: 0.815741777420044
+          vf_loss: 1.005772352218628
+    num_agent_steps_sampled: 340
+    num_agent_steps_trained: 340
+    num_steps_sampled: 340
+    num_steps_trained: 340
+    num_steps_trained_this_iter: 0
+  iterations_since_restore: 68
+  node_ip: 100.97.70.203
+  num_healthy_workers: 1
+  off_policy_estimator: {}
+  perf: {}
+  pid: 1999580
+  policy_reward_max: {}
+  policy_reward_mean: {}
+  policy_reward_min: {}
+  sampler_perf:
+    mean_action_processing_ms: 0.07157898190152535
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 3.465643816016521
+    mean_inference_ms: 1.3737691553370397
+    mean_raw_obs_processing_ms: 32.82684774093765
+  time_since_restore: 14.969934463500977
+  time_this_iter_s: 0.09946942329406738
+  time_total_s: 14.969934463500977
+  timers:
+    learn_throughput: 79.822
+    learn_time_ms: 62.639
+    load_throughput: 35353.203
+    load_time_ms: 0.141
+    sample_throughput: 44.835
+    sample_time_ms: 111.521
+    update_time_ms: 1.987
+  timestamp: 1665704587
+  timesteps_since_restore: 0
+  timesteps_this_iter: 0
+  timesteps_total: 340
+  training_iteration: 68
+  trial_id: b4d38_00000
+  
+== Status ==
+Current time: 2022-10-13 16:43:07 (running for 00:00:34.83)
+Memory usage on this node: 78.8/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/291.63 GiB heap, 0.0/128.98 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-13_16-42-32
+Number of trials: 1/1 (1 RUNNING)
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                   | status   | loc                   |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_compiler_gym_b4d38_00000 | RUNNING  | 100.97.70.203:1999580 |     68 |          14.9699 |  340 |  5.13553 |                   98 |             -1.84091 |                  5 |
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+Result for PPO_compiler_gym_b4d38_00000:
+  agent_timesteps_total: 575
+  custom_metrics: {}
+  date: 2022-10-13_16-43-12
+  done: false
+  episode_len_mean: 5.0
+  episode_media: {}
+  episode_reward_max: 98.0
+  episode_reward_mean: 4.164675521085963
+  episode_reward_min: -0.13432835820895517
+  episodes_this_iter: 1
+  episodes_total: 115
+  experiment_id: 50affaed481549309c698fe157b954aa
+  hostname: learnfair0565
+  info:
+    learner:
+      default_policy:
+        custom_metrics: {}
+        learner_stats:
+          cur_kl_coeff: 3.766966074181255e-06
+          cur_lr: 4.999999873689376e-05
+          entropy: 0.3285108208656311
+          entropy_coeff: 0.0
+          kl: 0.012720625847578049
+          model: {}
+          policy_loss: -0.08196181803941727
+          total_loss: 0.33292368054389954
+          vf_explained_var: -0.3236083984375
+          vf_loss: 0.414885550737381
+    num_agent_steps_sampled: 575
+    num_agent_steps_trained: 575
+    num_steps_sampled: 575
+    num_steps_trained: 575
+    num_steps_trained_this_iter: 0
+  iterations_since_restore: 115
+  node_ip: 100.97.70.203
+  num_healthy_workers: 1
+  off_policy_estimator: {}
+  perf: {}
+  pid: 1999580
+  policy_reward_max: {}
+  policy_reward_mean: {}
+  policy_reward_min: {}
+  sampler_perf:
+    mean_action_processing_ms: 0.06873149698999116
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 2.291006602923871
+    mean_inference_ms: 1.0589821280823641
+    mean_raw_obs_processing_ms: 26.762282721155135
+  time_since_restore: 19.099492073059082
+  time_this_iter_s: 0.07687687873840332
+  time_total_s: 19.099492073059082
+  timers:
+    learn_throughput: 82.058
+    learn_time_ms: 60.932
+    load_throughput: 33272.283
+    load_time_ms: 0.15
+    sample_throughput: 47.246
+    sample_time_ms: 105.829
+    update_time_ms: 1.622
+  timestamp: 1665704592
+  timesteps_since_restore: 0
+  timesteps_this_iter: 0
+  timesteps_total: 575
+  training_iteration: 115
+  trial_id: b4d38_00000
+  
+== Status ==
+Current time: 2022-10-13 16:43:12 (running for 00:00:39.89)
+Memory usage on this node: 78.9/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/291.63 GiB heap, 0.0/128.98 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-13_16-42-32
+Number of trials: 1/1 (1 RUNNING)
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                   | status   | loc                   |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_compiler_gym_b4d38_00000 | RUNNING  | 100.97.70.203:1999580 |    115 |          19.0995 |  575 |  4.16468 |                   98 |            -0.134328 |                  5 |
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+Result for PPO_compiler_gym_b4d38_00000:
+  agent_timesteps_total: 805
+  custom_metrics: {}
+  date: 2022-10-13_16-43-17
+  done: false
+  episode_len_mean: 5.0
+  episode_media: {}
+  episode_reward_max: 136.0
+  episode_reward_mean: 4.672952164752289
+  episode_reward_min: -0.04392764857881136
+  episodes_this_iter: 1
+  episodes_total: 161
+  experiment_id: 50affaed481549309c698fe157b954aa
+  hostname: learnfair0565
+  info:
+    learner:
+      default_policy:
+        custom_metrics: {}
+        learner_stats:
+          cur_kl_coeff: 0.0007053903536871076
+          cur_lr: 4.999999873689376e-05
+          entropy: 0.7976551055908203
+          entropy_coeff: 0.0
+          kl: 0.013180960901081562
+          model: {}
+          policy_loss: -0.1113167330622673
+          total_loss: 3.0520081520080566
+          vf_explained_var: -1.0
+          vf_loss: 3.1633152961730957
+    num_agent_steps_sampled: 805
+    num_agent_steps_trained: 805
+    num_steps_sampled: 805
+    num_steps_trained: 805
+    num_steps_trained_this_iter: 0
+  iterations_since_restore: 161
+  node_ip: 100.97.70.203
+  num_healthy_workers: 1
+  off_policy_estimator: {}
+  perf: {}
+  pid: 1999580
+  policy_reward_max: {}
+  policy_reward_mean: {}
+  policy_reward_min: {}
+  sampler_perf:
+    mean_action_processing_ms: 0.06735741192669642
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 2.0121881239428596
+    mean_inference_ms: 0.9798015835041443
+    mean_raw_obs_processing_ms: 16.914067092984
+  time_since_restore: 23.2032208442688
+  time_this_iter_s: 0.11329078674316406
+  time_total_s: 23.2032208442688
+  timers:
+    learn_throughput: 76.263
+    learn_time_ms: 65.563
+    load_throughput: 33442.067
+    load_time_ms: 0.15
+    sample_throughput: 44.115
+    sample_time_ms: 113.34
+    update_time_ms: 1.611
+  timestamp: 1665704597
+  timesteps_since_restore: 0
+  timesteps_this_iter: 0
+  timesteps_total: 805
+  training_iteration: 161
+  trial_id: b4d38_00000
+  
+== Status ==
+Current time: 2022-10-13 16:43:17 (running for 00:00:44.90)
+Memory usage on this node: 78.9/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/291.63 GiB heap, 0.0/128.98 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-13_16-42-32
+Number of trials: 1/1 (1 RUNNING)
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                   | status   | loc                   |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_compiler_gym_b4d38_00000 | RUNNING  | 100.97.70.203:1999580 |    161 |          23.2032 |  805 |  4.67295 |                  136 |           -0.0439276 |                  5 |
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+Result for PPO_compiler_gym_b4d38_00000:
+  agent_timesteps_total: 1005
+  custom_metrics: {}
+  date: 2022-10-13_16-43-22
+  done: false
+  episode_len_mean: 5.0
+  episode_media: {}
+  episode_reward_max: 137.0
+  episode_reward_mean: 5.954744450748197
+  episode_reward_min: -0.04392764857881136
+  episodes_this_iter: 1
+  episodes_total: 201
+  experiment_id: 50affaed481549309c698fe157b954aa
+  hostname: learnfair0565
+  info:
+    learner:
+      default_policy:
+        custom_metrics: {}
+        learner_stats:
+          cur_kl_coeff: 2.8279369871597737e-05
+          cur_lr: 4.999999873689376e-05
+          entropy: 0.15079252421855927
+          entropy_coeff: 0.0
+          kl: 0.0010317874839529395
+          model: {}
+          policy_loss: -0.04336671903729439
+          total_loss: 0.5496824979782104
+          vf_explained_var: -1.0
+          vf_loss: 0.5930492281913757
+    num_agent_steps_sampled: 1005
+    num_agent_steps_trained: 1005
+    num_steps_sampled: 1005
+    num_steps_trained: 1005
+    num_steps_trained_this_iter: 0
+  iterations_since_restore: 201
+  node_ip: 100.97.70.203
+  num_healthy_workers: 1
+  off_policy_estimator: {}
+  perf: {}
+  pid: 1999580
+  policy_reward_max: {}
+  policy_reward_mean: {}
+  policy_reward_min: {}
+  sampler_perf:
+    mean_action_processing_ms: 0.06672096078049207
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 1.896395753463362
+    mean_inference_ms: 0.9586357453130964
+    mean_raw_obs_processing_ms: 12.321528738070999
+  time_since_restore: 26.71761202812195
+  time_this_iter_s: 0.09898757934570312
+  time_total_s: 26.71761202812195
+  timers:
+    learn_throughput: 79.982
+    learn_time_ms: 62.514
+    load_throughput: 36064.523
+    load_time_ms: 0.139
+    sample_throughput: 34.832
+    sample_time_ms: 143.546
+    update_time_ms: 1.458
+  timestamp: 1665704602
+  timesteps_since_restore: 0
+  timesteps_this_iter: 0
+  timesteps_total: 1005
+  training_iteration: 201
+  trial_id: b4d38_00000
+  
+== Status ==
+Current time: 2022-10-13 16:43:23 (running for 00:00:50.72)
+Memory usage on this node: 78.9/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/291.63 GiB heap, 0.0/128.98 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-13_16-42-32
+Number of trials: 1/1 (1 RUNNING)
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                   | status   | loc                   |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_compiler_gym_b4d38_00000 | RUNNING  | 100.97.70.203:1999580 |    201 |          26.7176 | 1005 |  5.95474 |                  137 |           -0.0439276 |                  5 |
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+Result for PPO_compiler_gym_b4d38_00000:
+  agent_timesteps_total: 1240
+  custom_metrics: {}
+  date: 2022-10-13_16-43-28
+  done: false
+  episode_len_mean: 5.0
+  episode_media: {}
+  episode_reward_max: 137.0
+  episode_reward_mean: 4.102560554159121
+  episode_reward_min: 0.0
+  episodes_this_iter: 1
+  episodes_total: 248
+  experiment_id: 50affaed481549309c698fe157b954aa
+  hostname: learnfair0565
+  info:
+    learner:
+      default_policy:
+        custom_metrics: {}
+        learner_stats:
+          cur_kl_coeff: 1.6874850583721568e-13
+          cur_lr: 4.999999873689376e-05
+          entropy: 0.41789668798446655
+          entropy_coeff: 0.0
+          kl: 0.021379295736551285
+          model: {}
+          policy_loss: -0.031843848526477814
+          total_loss: 0.0788339152932167
+          vf_explained_var: 0.3890511691570282
+          vf_loss: 0.11067774891853333
+    num_agent_steps_sampled: 1240
+    num_agent_steps_trained: 1240
+    num_steps_sampled: 1240
+    num_steps_trained: 1240
+    num_steps_trained_this_iter: 0
+  iterations_since_restore: 248
+  node_ip: 100.97.70.203
+  num_healthy_workers: 1
+  off_policy_estimator: {}
+  perf:
+    cpu_util_percent: 8.4
+    ram_util_percent: 15.7
+  pid: 1999580
+  policy_reward_max: {}
+  policy_reward_mean: {}
+  policy_reward_min: {}
+  sampler_perf:
+    mean_action_processing_ms: 0.06615635606594952
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 1.8197052540875602
+    mean_inference_ms: 0.946541899009726
+    mean_raw_obs_processing_ms: 9.538468917821325
+  time_since_restore: 30.862303495407104
+  time_this_iter_s: 0.08787250518798828
+  time_total_s: 30.862303495407104
+  timers:
+    learn_throughput: 81.535
+    learn_time_ms: 61.323
+    load_throughput: 31545.608
+    load_time_ms: 0.159
+    sample_throughput: 48.001
+    sample_time_ms: 104.164
+    update_time_ms: 1.67
+  timestamp: 1665704608
+  timesteps_since_restore: 0
+  timesteps_this_iter: 0
+  timesteps_total: 1240
+  training_iteration: 248
+  trial_id: b4d38_00000
+  
+== Status ==
+Current time: 2022-10-13 16:43:28 (running for 00:00:55.76)
+Memory usage on this node: 78.9/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/291.63 GiB heap, 0.0/128.98 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-13_16-42-32
+Number of trials: 1/1 (1 RUNNING)
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                   | status   | loc                   |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_compiler_gym_b4d38_00000 | RUNNING  | 100.97.70.203:1999580 |    248 |          30.8623 | 1240 |  4.10256 |                  137 |                    0 |                  5 |
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+Result for PPO_compiler_gym_b4d38_00000:
+  agent_timesteps_total: 1465
+  custom_metrics: {}
+  date: 2022-10-13_16-43-33
+  done: false
+  episode_len_mean: 5.0
+  episode_media: {}
+  episode_reward_max: 144.0
+  episode_reward_mean: 3.669431588529626
+  episode_reward_min: 0.0
+  episodes_this_iter: 1
+  episodes_total: 293
+  experiment_id: 50affaed481549309c698fe157b954aa
+  hostname: learnfair0565
+  info:
+    learner:
+      default_policy:
+        custom_metrics: {}
+        learner_stats:
+          cur_kl_coeff: 3.805420452899664e-15
+          cur_lr: 4.999999873689376e-05
+          entropy: 0.8107736706733704
+          entropy_coeff: 0.0
+          kl: 0.0672600045800209
+          model: {}
+          policy_loss: -0.06641227006912231
+          total_loss: 0.3691307008266449
+          vf_explained_var: -1.0
+          vf_loss: 0.43554291129112244
+    num_agent_steps_sampled: 1465
+    num_agent_steps_trained: 1465
+    num_steps_sampled: 1465
+    num_steps_trained: 1465
+    num_steps_trained_this_iter: 0
+  iterations_since_restore: 293
+  node_ip: 100.97.70.203
+  num_healthy_workers: 1
+  off_policy_estimator: {}
+  perf: {}
+  pid: 1999580
+  policy_reward_max: {}
+  policy_reward_mean: {}
+  policy_reward_min: {}
+  sampler_perf:
+    mean_action_processing_ms: 0.06571932440970507
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 1.7647512726543848
+    mean_inference_ms: 0.9401865925540767
+    mean_raw_obs_processing_ms: 7.947480554101427
+  time_since_restore: 35.009233713150024
+  time_this_iter_s: 0.08968257904052734
+  time_total_s: 35.009233713150024
+  timers:
+    learn_throughput: 75.001
+    learn_time_ms: 66.666
+    load_throughput: 28579.34
+    load_time_ms: 0.175
+    sample_throughput: 44.194
+    sample_time_ms: 113.139
+    update_time_ms: 1.556
+  timestamp: 1665704613
+  timesteps_since_restore: 0
+  timesteps_this_iter: 0
+  timesteps_total: 1465
+  training_iteration: 293
+  trial_id: b4d38_00000
+  
+== Status ==
+Current time: 2022-10-13 16:43:33 (running for 00:01:00.78)
+Memory usage on this node: 78.9/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/291.63 GiB heap, 0.0/128.98 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-13_16-42-32
+Number of trials: 1/1 (1 RUNNING)
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                   | status   | loc                   |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_compiler_gym_b4d38_00000 | RUNNING  | 100.97.70.203:1999580 |    293 |          35.0092 | 1465 |  3.66943 |                  144 |                    0 |                  5 |
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+Result for PPO_compiler_gym_b4d38_00000:
+  agent_timesteps_total: 1700
+  custom_metrics: {}
+  date: 2022-10-13_16-43-38
+  done: false
+  episode_len_mean: 5.0
+  episode_media: {}
+  episode_reward_max: 144.0
+  episode_reward_mean: 5.8810165275793915
+  episode_reward_min: 0.0
+  episodes_this_iter: 1
+  episodes_total: 340
+  experiment_id: 50affaed481549309c698fe157b954aa
+  hostname: learnfair0565
+  info:
+    learner:
+      default_policy:
+        custom_metrics: {}
+        learner_stats:
+          cur_kl_coeff: 3.9588402272073414e-14
+          cur_lr: 4.999999873689376e-05
+          entropy: 1.0605205297470093
+          entropy_coeff: 0.0
+          kl: 0.13041619956493378
+          model: {}
+          policy_loss: -0.1351209282875061
+          total_loss: -0.13286562263965607
+          vf_explained_var: 0.9515662789344788
+          vf_loss: 0.002255301456898451
+    num_agent_steps_sampled: 1700
+    num_agent_steps_trained: 1700
+    num_steps_sampled: 1700
+    num_steps_trained: 1700
+    num_steps_trained_this_iter: 0
+  iterations_since_restore: 340
+  node_ip: 100.97.70.203
+  num_healthy_workers: 1
+  off_policy_estimator: {}
+  perf: {}
+  pid: 1999580
+  policy_reward_max: {}
+  policy_reward_mean: {}
+  policy_reward_min: {}
+  sampler_perf:
+    mean_action_processing_ms: 0.06542269139883125
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 1.737974783626367
+    mean_inference_ms: 0.9363253143035162
+    mean_raw_obs_processing_ms: 6.820071138862212
+  time_since_restore: 39.18501162528992
+  time_this_iter_s: 0.09936785697937012
+  time_total_s: 39.18501162528992
+  timers:
+    learn_throughput: 81.645
+    learn_time_ms: 61.241
+    load_throughput: 30468.575
+    load_time_ms: 0.164
+    sample_throughput: 46.838
+    sample_time_ms: 106.75
+    update_time_ms: 1.565
+  timestamp: 1665704618
+  timesteps_since_restore: 0
+  timesteps_this_iter: 0
+  timesteps_total: 1700
+  training_iteration: 340
+  trial_id: b4d38_00000
+  
+== Status ==
+Current time: 2022-10-13 16:43:38 (running for 00:01:05.85)
+Memory usage on this node: 78.9/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/291.63 GiB heap, 0.0/128.98 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-13_16-42-32
+Number of trials: 1/1 (1 RUNNING)
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                   | status   | loc                   |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_compiler_gym_b4d38_00000 | RUNNING  | 100.97.70.203:1999580 |    340 |           39.185 | 1700 |  5.88102 |                  144 |                    0 |                  5 |
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+Result for PPO_compiler_gym_b4d38_00000:
+  agent_timesteps_total: 1935
+  custom_metrics: {}
+  date: 2022-10-13_16-43-43
+  done: false
+  episode_len_mean: 5.0
+  episode_media: {}
+  episode_reward_max: 132.0
+  episode_reward_mean: 4.775480441162932
+  episode_reward_min: -0.28217821782178215
+  episodes_this_iter: 1
+  episodes_total: 387
+  experiment_id: 50affaed481549309c698fe157b954aa
+  hostname: learnfair0565
+  info:
+    learner:
+      default_policy:
+        custom_metrics: {}
+        learner_stats:
+          cur_kl_coeff: 5.930560903477655e-11
+          cur_lr: 4.999999873689376e-05
+          entropy: 1.461028814315796
+          entropy_coeff: 0.0
+          kl: 0.03523600101470947
+          model: {}
+          policy_loss: -0.12065402418375015
+          total_loss: 39.366817474365234
+          vf_explained_var: -1.0
+          vf_loss: 39.48746871948242
+    num_agent_steps_sampled: 1935
+    num_agent_steps_trained: 1935
+    num_steps_sampled: 1935
+    num_steps_trained: 1935
+    num_steps_trained_this_iter: 0
+  iterations_since_restore: 387
+  node_ip: 100.97.70.203
+  num_healthy_workers: 1
+  off_policy_estimator: {}
+  perf: {}
+  pid: 1999580
+  policy_reward_max: {}
+  policy_reward_mean: {}
+  policy_reward_min: {}
+  sampler_perf:
+    mean_action_processing_ms: 0.06522315207733687
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 1.7328981879757757
+    mean_inference_ms: 0.9331648861547657
+    mean_raw_obs_processing_ms: 6.005641481889483
+  time_since_restore: 43.32755923271179
+  time_this_iter_s: 0.09987688064575195
+  time_total_s: 43.32755923271179
+  timers:
+    learn_throughput: 73.187
+    learn_time_ms: 68.318
+    load_throughput: 36151.56
+    load_time_ms: 0.138
+    sample_throughput: 45.528
+    sample_time_ms: 109.823
+    update_time_ms: 1.63
+  timestamp: 1665704623
+  timesteps_since_restore: 0
+  timesteps_this_iter: 0
+  timesteps_total: 1935
+  training_iteration: 387
+  trial_id: b4d38_00000
+  
+== Status ==
+Current time: 2022-10-13 16:43:43 (running for 00:01:10.88)
+Memory usage on this node: 78.9/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/291.63 GiB heap, 0.0/128.98 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-13_16-42-32
+Number of trials: 1/1 (1 RUNNING)
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                   | status   | loc                   |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_compiler_gym_b4d38_00000 | RUNNING  | 100.97.70.203:1999580 |    387 |          43.3276 | 1935 |  4.77548 |                  132 |            -0.282178 |                  5 |
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+Result for PPO_compiler_gym_b4d38_00000:
+  agent_timesteps_total: 2170
+  custom_metrics: {}
+  date: 2022-10-13_16-43-48
+  done: false
+  episode_len_mean: 5.0
+  episode_media: {}
+  episode_reward_max: 132.0
+  episode_reward_mean: 4.012170668435528
+  episode_reward_min: -0.28217821782178215
+  episodes_this_iter: 1
+  episodes_total: 434
+  experiment_id: 50affaed481549309c698fe157b954aa
+  hostname: learnfair0565
+  info:
+    learner:
+      default_policy:
+        custom_metrics: {}
+        learner_stats:
+          cur_kl_coeff: 2.398762944721966e-06
+          cur_lr: 4.999999873689376e-05
+          entropy: 1.2352566719055176
+          entropy_coeff: 0.0
+          kl: 0.14250466227531433
+          model: {}
+          policy_loss: -0.12494048476219177
+          total_loss: 0.0859469398856163
+          vf_explained_var: 0.6818674802780151
+          vf_loss: 0.2108871191740036
+    num_agent_steps_sampled: 2170
+    num_agent_steps_trained: 2170
+    num_steps_sampled: 2170
+    num_steps_trained: 2170
+    num_steps_trained_this_iter: 0
+  iterations_since_restore: 434
+  node_ip: 100.97.70.203
+  num_healthy_workers: 1
+  off_policy_estimator: {}
+  perf: {}
+  pid: 1999580
+  policy_reward_max: {}
+  policy_reward_mean: {}
+  policy_reward_min: {}
+  sampler_perf:
+    mean_action_processing_ms: 0.06494610540078655
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 1.705025517885759
+    mean_inference_ms: 0.9293586983877381
+    mean_raw_obs_processing_ms: 5.393143000183865
+  time_since_restore: 47.48639488220215
+  time_this_iter_s: 0.08063721656799316
+  time_total_s: 47.48639488220215
+  timers:
+    learn_throughput: 81.763
+    learn_time_ms: 61.152
+    load_throughput: 34640.766
+    load_time_ms: 0.144
+    sample_throughput: 44.454
+    sample_time_ms: 112.476
+    update_time_ms: 1.592
+  timestamp: 1665704628
+  timesteps_since_restore: 0
+  timesteps_this_iter: 0
+  timesteps_total: 2170
+  training_iteration: 434
+  trial_id: b4d38_00000
+  
+== Status ==
+Current time: 2022-10-13 16:43:48 (running for 00:01:15.96)
+Memory usage on this node: 78.9/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/291.63 GiB heap, 0.0/128.98 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-13_16-42-32
+Number of trials: 1/1 (1 RUNNING)
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                   | status   | loc                   |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_compiler_gym_b4d38_00000 | RUNNING  | 100.97.70.203:1999580 |    434 |          47.4864 | 2170 |  4.01217 |                  132 |            -0.282178 |                  5 |
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+Result for PPO_compiler_gym_b4d38_00000:
+  agent_timesteps_total: 2400
+  custom_metrics: {}
+  date: 2022-10-13_16-43-53
+  done: false
+  episode_len_mean: 5.0
+  episode_media: {}
+  episode_reward_max: 132.0
+  episode_reward_mean: 4.748358917807507
+  episode_reward_min: -0.28217821782178215
+  episodes_this_iter: 1
+  episodes_total: 480
+  experiment_id: 50affaed481549309c698fe157b954aa
+  hostname: learnfair0565
+  info:
+    learner:
+      default_policy:
+        custom_metrics: {}
+        learner_stats:
+          cur_kl_coeff: 0.003194203833118081
+          cur_lr: 4.999999873689376e-05
+          entropy: 1.3413217067718506
+          entropy_coeff: 0.0
+          kl: 0.18018537759780884
+          model: {}
+          policy_loss: -0.24775250256061554
+          total_loss: 0.13444478809833527
+          vf_explained_var: -0.49505317211151123
+          vf_loss: 0.381621778011322
+    num_agent_steps_sampled: 2400
+    num_agent_steps_trained: 2400
+    num_steps_sampled: 2400
+    num_steps_trained: 2400
+    num_steps_trained_this_iter: 0
+  iterations_since_restore: 480
+  node_ip: 100.97.70.203
+  num_healthy_workers: 1
+  off_policy_estimator: {}
+  perf:
+    cpu_util_percent: 9.0
+    ram_util_percent: 15.7
+  pid: 1999580
+  policy_reward_max: {}
+  policy_reward_mean: {}
+  policy_reward_min: {}
+  sampler_perf:
+    mean_action_processing_ms: 0.06476040493974508
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 1.6709119267982555
+    mean_inference_ms: 0.9261729708933619
+    mean_raw_obs_processing_ms: 4.935304783807546
+  time_since_restore: 51.629005670547485
+  time_this_iter_s: 0.0887904167175293
+  time_total_s: 51.629005670547485
+  timers:
+    learn_throughput: 79.222
+    learn_time_ms: 63.113
+    load_throughput: 34503.982
+    load_time_ms: 0.145
+    sample_throughput: 44.72
+    sample_time_ms: 111.806
+    update_time_ms: 1.543
+  timestamp: 1665704633
+  timesteps_since_restore: 0
+  timesteps_this_iter: 0
+  timesteps_total: 2400
+  training_iteration: 480
+  trial_id: b4d38_00000
+  
+== Status ==
+Current time: 2022-10-13 16:43:53 (running for 00:01:21.01)
+Memory usage on this node: 78.9/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/291.63 GiB heap, 0.0/128.98 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-13_16-42-32
+Number of trials: 1/1 (1 RUNNING)
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                   | status   | loc                   |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_compiler_gym_b4d38_00000 | RUNNING  | 100.97.70.203:1999580 |    480 |           51.629 | 2400 |  4.74836 |                  132 |            -0.282178 |                  5 |
++------------------------------+----------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+Result for PPO_compiler_gym_b4d38_00000:
+  agent_timesteps_total: 2500
+  custom_metrics: {}
+  date: 2022-10-13_16-43-56
+  done: true
+  episode_len_mean: 5.0
+  episode_media: {}
+  episode_reward_max: 153.0
+  episode_reward_mean: 5.713399884884684
+  episode_reward_min: 0.0
+  episodes_this_iter: 1
+  episodes_total: 500
+  experiment_id: 50affaed481549309c698fe157b954aa
+  hostname: learnfair0565
+  info:
+    learner:
+      default_policy:
+        custom_metrics: {}
+        learner_stats:
+          cur_kl_coeff: 0.1165601909160614
+          cur_lr: 4.999999873689376e-05
+          entropy: 0.44113725423812866
+          entropy_coeff: 0.0
+          kl: 0.015935389325022697
+          model: {}
+          policy_loss: -0.028461730107665062
+          total_loss: 0.11372734606266022
+          vf_explained_var: 0.7400972247123718
+          vf_loss: 0.1403316706418991
+    num_agent_steps_sampled: 2500
+    num_agent_steps_trained: 2500
+    num_steps_sampled: 2500
+    num_steps_trained: 2500
+    num_steps_trained_this_iter: 0
+  iterations_since_restore: 500
+  node_ip: 100.97.70.203
+  num_healthy_workers: 1
+  off_policy_estimator: {}
+  perf: {}
+  pid: 1999580
+  policy_reward_max: {}
+  policy_reward_mean: {}
+  policy_reward_min: {}
+  sampler_perf:
+    mean_action_processing_ms: 0.06470685309505655
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 1.6632339988317912
+    mean_inference_ms: 0.9251939398733212
+    mean_raw_obs_processing_ms: 4.766619261337438
+  time_since_restore: 53.439884662628174
+  time_this_iter_s: 0.08379054069519043
+  time_total_s: 53.439884662628174
+  timers:
+    learn_throughput: 80.887
+    learn_time_ms: 61.815
+    load_throughput: 36824.442
+    load_time_ms: 0.136
+    sample_throughput: 35.581
+    sample_time_ms: 140.523
+    update_time_ms: 1.594
+  timestamp: 1665704636
+  timesteps_since_restore: 0
+  timesteps_this_iter: 0
+  timesteps_total: 2500
+  training_iteration: 500
+  trial_id: b4d38_00000
+  
+== Status ==
+Current time: 2022-10-13 16:43:56 (running for 00:01:24.18)
+Memory usage on this node: 78.9/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 0/80 CPUs, 0/1 GPUs, 0.0/291.63 GiB heap, 0.0/128.98 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-13_16-42-32
+Number of trials: 1/1 (1 TERMINATED)
++------------------------------+------------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                   | status     | loc                   |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------+------------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_compiler_gym_b4d38_00000 | TERMINATED | 100.97.70.203:1999580 |    500 |          53.4399 | 2500 |   5.7134 |                  153 |                    0 |                  5 |
++------------------------------+------------+-----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+Best config is: None
+SUCCESS

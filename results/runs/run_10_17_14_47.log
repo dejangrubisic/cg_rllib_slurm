@@ -1,0 +1,172 @@
+Address Head: 100.97.70.7:6888
+RAY_ADDRESS: auto
+REDIS_PASSWORD: 2fe20a73-a6b2-485b-bd9f-838174ba6818
+Starting HEAD at learnfair0489
+SUCCESS
+Worker number = 0
+Starting command: 
+2022-10-17 14:48:44,350	INFO scripts.py:612 -- Local node IP: 100.97.70.7
+2022-10-17 14:48:51,829	SUCC scripts.py:651 -- --------------------
+2022-10-17 14:48:51,829	SUCC scripts.py:652 -- Ray runtime started.
+2022-10-17 14:48:51,829	SUCC scripts.py:653 -- --------------------
+2022-10-17 14:48:51,829	INFO scripts.py:655 -- Next steps
+2022-10-17 14:48:51,830	INFO scripts.py:656 -- To connect to this Ray runtime from another node, run
+2022-10-17 14:48:51,830	INFO scripts.py:660 --   ray start --address='100.97.70.7:6888' --redis-password='2fe20a73-a6b2-485b-bd9f-838174ba6818'
+2022-10-17 14:48:51,830	INFO scripts.py:665 -- Alternatively, use the following Python code:
+2022-10-17 14:48:51,830	INFO scripts.py:668 -- import ray
+2022-10-17 14:48:51,830	INFO scripts.py:669 -- ray.init(address='auto', _redis_password='2fe20a73-a6b2-485b-bd9f-838174ba6818')
+2022-10-17 14:48:51,830	INFO scripts.py:677 -- To connect to this Ray runtime from outside of the cluster, for example to
+2022-10-17 14:48:51,831	INFO scripts.py:679 -- connect to a remote cluster from your laptop directly, use the following
+2022-10-17 14:48:51,831	INFO scripts.py:681 -- Python code:
+2022-10-17 14:48:51,831	INFO scripts.py:684 -- import ray
+2022-10-17 14:48:51,831	INFO scripts.py:685 -- ray.init(address='ray://<head_node_ip_address>:10001')
+2022-10-17 14:48:51,832	INFO scripts.py:691 -- If connection fails, check your firewall settings and network configuration.
+2022-10-17 14:48:51,832	INFO scripts.py:696 -- To terminate the Ray runtime, run
+2022-10-17 14:48:51,832	INFO scripts.py:697 --   ray stop
+2022-10-17 14:48:51,832	INFO scripts.py:765 -- --block
+2022-10-17 14:48:51,832	INFO scripts.py:766 -- This command will now block until terminated by a signal.
+2022-10-17 14:48:51,832	INFO scripts.py:768 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly.
+auto 100.97.70.7 2fe20a73-a6b2-485b-bd9f-838174ba6818
+--- 2
+1017 14:49:12 ray.worker] Using address auto set in the environment variable RAY_ADDRESS
+
+
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy Register
+
+
+1017 14:49:12 compiler_gym.service.connection] Exec `./example_service.py --working_dir=/dev/shm/compiler_gym_dejang/s/1017T144912-636349-78ff --alsologtostderr -v=1 --logbuflevel=-1`
+1017 14:49:23 compiler_gym.service.client_service_compiler_env] Setting benchmark: benchmark://example-v0/foo
+--- 3
+== Status ==
+Current time: 2022-10-17 14:49:25 (running for 00:00:00.19)
+Memory usage on this node: 80.5/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 0/80 CPUs, 0/1 GPUs, 0.0/289.99 GiB heap, 0.0/128.27 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-17_14-49-24
+Number of trials: 1/1 (1 PENDING)
++----------------------------+----------+-------+
+| Trial name                 | status   | loc   |
+|----------------------------+----------+-------|
+| PPO_example-v0_90e1f_00000 | PENDING  |       |
++----------------------------+----------+-------+
+
+
+1017 14:49:27 git.cmd] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/private/home/dejang/tools/cg_rllib_slurm, universal_newlines=False, shell=None, istream=None)
+1017 14:49:29 urllib3.connectionpool] Starting new HTTPS connection (1): api.wandb.ai:443
+1017 14:49:29 urllib3.connectionpool] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 521
+1017 14:49:29 urllib3.connectionpool] Starting new HTTPS connection (1): api.wandb.ai:443
+1017 14:49:34 git.cmd] Popen(['git', 'cat-file', '--batch-check'], cwd=/private/home/dejang/tools/cg_rllib_slurm, universal_newlines=False, shell=None, istream=<valid stream>)
+1017 14:49:40 urllib3.connectionpool] Starting new HTTPS connection (1): api.wandb.ai:443
+1017 14:49:41 urllib3.connectionpool] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 325
+[2m[36m(RolloutWorker pid=3026428)[0m 
+[2m[36m(RolloutWorker pid=3026428)[0m 
+[2m[36m(RolloutWorker pid=3026428)[0m yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy Register
+[2m[36m(RolloutWorker pid=3026428)[0m 
+[2m[36m(RolloutWorker pid=3026428)[0m 
+== Status ==
+Current time: 2022-10-17 14:49:56 (running for 00:00:31.43)
+Memory usage on this node: 81.7/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/289.99 GiB heap, 0.0/128.27 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-17_14-49-24
+Number of trials: 1/1 (1 RUNNING)
++----------------------------+----------+---------------------+
+| Trial name                 | status   | loc                 |
+|----------------------------+----------+---------------------|
+| PPO_example-v0_90e1f_00000 | RUNNING  | 100.97.70.7:3026429 |
++----------------------------+----------+---------------------+
+
+
+Result for PPO_example-v0_90e1f_00000:
+  agent_timesteps_total: 5
+  custom_metrics: {}
+  date: 2022-10-17_14-49-56
+  done: true
+  episode_len_mean: .nan
+  episode_media: {}
+  episode_reward_max: .nan
+  episode_reward_mean: .nan
+  episode_reward_min: .nan
+  episodes_this_iter: 0
+  episodes_total: 0
+  experiment_id: 23382e89c58b44d2993961b86ad98ed5
+  hostname: learnfair0489
+  info:
+    learner:
+      default_policy:
+        custom_metrics: {}
+        learner_stats:
+          cur_kl_coeff: 0.20000000298023224
+          cur_lr: 4.999999873689376e-05
+          entropy: 1.0986121892929077
+          entropy_coeff: 0.0
+          kl: 0.0
+          model: {}
+          policy_loss: 0.0
+          total_loss: 0.0
+          vf_explained_var: 'null'
+          vf_loss: 0.0
+    num_agent_steps_sampled: 5
+    num_agent_steps_trained: 5
+    num_steps_sampled: 5
+    num_steps_trained: 5
+  iterations_since_restore: 1
+  node_ip: 100.97.70.7
+  num_healthy_workers: 1
+  off_policy_estimator: {}
+  perf:
+    cpu_util_percent: 8.9
+    ram_util_percent: 16.2
+  pid: 3026429
+  policy_reward_max: {}
+  policy_reward_mean: {}
+  policy_reward_min: {}
+  sampler_perf: {}
+  time_since_restore: 0.37870073318481445
+  time_this_iter_s: 0.37870073318481445
+  time_total_s: 0.37870073318481445
+  timers:
+    learn_throughput: 16.531
+    learn_time_ms: 302.47
+    load_throughput: 28610.532
+    load_time_ms: 0.175
+    sample_throughput: 61.804
+    sample_time_ms: 80.901
+    update_time_ms: 1.948
+  timestamp: 1666043396
+  timesteps_since_restore: 0
+  timesteps_this_iter: 0
+  timesteps_total: 5
+  training_iteration: 1
+  trial_id: 90e1f_00000
+  
+== Status ==
+Current time: 2022-10-17 14:50:00 (running for 00:00:35.60)
+Memory usage on this node: 81.7/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/289.99 GiB heap, 0.0/128.27 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-17_14-49-24
+Number of trials: 1/1 (1 RUNNING)
++----------------------------+----------+---------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                 | status   | loc                 |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|----------------------------+----------+---------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_example-v0_90e1f_00000 | RUNNING  | 100.97.70.7:3026429 |      1 |         0.378701 |    5 |      nan |                  nan |                  nan |                nan |
++----------------------------+----------+---------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2022-10-17 14:50:00 (running for 00:00:35.62)
+Memory usage on this node: 81.7/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 0/80 CPUs, 0/1 GPUs, 0.0/289.99 GiB heap, 0.0/128.27 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-17_14-49-24
+Number of trials: 1/1 (1 TERMINATED)
++----------------------------+------------+---------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                 | status     | loc                 |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|----------------------------+------------+---------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_example-v0_90e1f_00000 | TERMINATED | 100.97.70.7:3026429 |      1 |         0.378701 |    5 |      nan |                  nan |                  nan |                nan |
++----------------------------+------------+---------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+Best config is: None
+SUCCESS

@@ -1,0 +1,11 @@
+2022-10-17 12:45:30,493	INFO services.py:1338 -- View the Ray dashboard at [1m[32mhttp://127.0.0.1:8265[39m[22m
+INFO:ray.worker:Using address auto set in the environment variable RAY_ADDRESS
+2022-10-17 12:45:55,138	INFO worker.py:842 -- Connecting to existing Ray cluster at address: 100.97.65.171:6888
+Traceback (most recent call last):
+  File "main_ltcg.py", line 495, in <module>
+    ray.init(address=ray_address, _node_ip_address=head_node_ip, _redis_password=redis_password, num_cpus=4)    
+  File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/ray/_private/client_mode_hook.py", line 105, in wrapper
+    return func(*args, **kwargs)
+  File "/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/ray/worker.py", line 916, in init
+    raise ValueError(
+ValueError: When connecting to an existing cluster, num_cpus and num_gpus must not be provided.

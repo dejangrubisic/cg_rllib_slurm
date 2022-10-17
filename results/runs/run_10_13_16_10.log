@@ -1,0 +1,125 @@
+Address Head: 100.97.65.109:6888
+RAY_ADDRESS: auto
+REDIS_PASSWORD: 73ccfd80-0cc7-4e23-a9c4-bec399184550
+Starting HEAD at learnfair0235
+SUCCESS
+Worker number = 0
+Starting command: 
+2022-10-13 16:26:43,083	INFO scripts.py:612 -- Local node IP: 100.97.65.109
+2022-10-13 16:26:49,867	SUCC scripts.py:651 -- --------------------
+2022-10-13 16:26:49,867	SUCC scripts.py:652 -- Ray runtime started.
+2022-10-13 16:26:49,867	SUCC scripts.py:653 -- --------------------
+2022-10-13 16:26:49,867	INFO scripts.py:655 -- Next steps
+2022-10-13 16:26:49,867	INFO scripts.py:656 -- To connect to this Ray runtime from another node, run
+2022-10-13 16:26:49,867	INFO scripts.py:660 --   ray start --address='100.97.65.109:6888' --redis-password='73ccfd80-0cc7-4e23-a9c4-bec399184550'
+2022-10-13 16:26:49,867	INFO scripts.py:665 -- Alternatively, use the following Python code:
+2022-10-13 16:26:49,868	INFO scripts.py:668 -- import ray
+2022-10-13 16:26:49,868	INFO scripts.py:669 -- ray.init(address='auto', _redis_password='73ccfd80-0cc7-4e23-a9c4-bec399184550')
+2022-10-13 16:26:49,868	INFO scripts.py:677 -- To connect to this Ray runtime from outside of the cluster, for example to
+2022-10-13 16:26:49,868	INFO scripts.py:679 -- connect to a remote cluster from your laptop directly, use the following
+2022-10-13 16:26:49,868	INFO scripts.py:681 -- Python code:
+2022-10-13 16:26:49,869	INFO scripts.py:684 -- import ray
+2022-10-13 16:26:49,869	INFO scripts.py:685 -- ray.init(address='ray://<head_node_ip_address>:10001')
+2022-10-13 16:26:49,869	INFO scripts.py:691 -- If connection fails, check your firewall settings and network configuration.
+2022-10-13 16:26:49,869	INFO scripts.py:696 -- To terminate the Ray runtime, run
+2022-10-13 16:26:49,869	INFO scripts.py:697 --   ray stop
+2022-10-13 16:26:49,870	INFO scripts.py:765 -- --block
+2022-10-13 16:26:49,870	INFO scripts.py:766 -- This command will now block until terminated by a signal.
+2022-10-13 16:26:49,870	INFO scripts.py:768 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly.
+auto 100.97.65.109 73ccfd80-0cc7-4e23-a9c4-bec399184550
+== Status ==
+Current time: 2022-10-13 16:27:01 (running for 00:00:00.22)
+Memory usage on this node: 54.2/503.8 GiB
+Using AsyncHyperBand: num_stopped=0
+Bracket: Iter 64.000: None | Iter 16.000: None | Iter 4.000: None | Iter 1.000: None
+Resources requested: 0/80 CPUs, 0/1 GPUs, 0.0/308.5 GiB heap, 0.0/136.2 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/TrainMNIST_2022-10-13_16-27-00
+Number of trials: 1/1 (1 PENDING)
++------------------------+----------+-------+
+| Trial name             | status   | loc   |
+|------------------------+----------+-------|
+| TrainMNIST_89973_00000 | PENDING  |       |
++------------------------+----------+-------+
+
+
+== Status ==
+Current time: 2022-10-13 16:27:12 (running for 00:00:11.52)
+Memory usage on this node: 56.7/503.8 GiB
+Using AsyncHyperBand: num_stopped=0
+Bracket: Iter 64.000: None | Iter 16.000: None | Iter 4.000: None | Iter 1.000: None
+Resources requested: 10.0/80 CPUs, 1.0/1 GPUs, 0.0/308.5 GiB heap, 0.0/136.2 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/TrainMNIST_2022-10-13_16-27-00
+Number of trials: 1/1 (1 RUNNING)
++------------------------+----------+---------------------+
+| Trial name             | status   | loc                 |
+|------------------------+----------+---------------------|
+| TrainMNIST_89973_00000 | RUNNING  | 100.97.65.109:19732 |
++------------------------+----------+---------------------+
+
+
+Result for TrainMNIST_89973_00000:
+  date: 2022-10-13_16-27-12
+  done: false
+  experiment_id: 0ac505bd948b44f2b86d94722e4c1361
+  hostname: learnfair0235
+  iterations_since_restore: 1
+  mean_accuracy: 0.3625
+  node_ip: 100.97.65.109
+  pid: 19732
+  time_since_restore: 0.34748053550720215
+  time_this_iter_s: 0.34748053550720215
+  time_total_s: 0.34748053550720215
+  timestamp: 1665703632
+  timesteps_since_restore: 0
+  training_iteration: 1
+  trial_id: '89973_00000'
+  
+== Status ==
+Current time: 2022-10-13 16:27:12 (running for 00:00:11.89)
+Memory usage on this node: 56.8/503.8 GiB
+Using AsyncHyperBand: num_stopped=0
+Bracket: Iter 64.000: None | Iter 16.000: None | Iter 4.000: None | Iter 1.000: 0.3625
+Resources requested: 10.0/80 CPUs, 1.0/1 GPUs, 0.0/308.5 GiB heap, 0.0/136.2 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/TrainMNIST_2022-10-13_16-27-00
+Number of trials: 1/1 (1 RUNNING)
++------------------------+----------+---------------------+--------+--------+------------------+
+| Trial name             | status   | loc                 |    acc |   iter |   total time (s) |
+|------------------------+----------+---------------------+--------+--------+------------------|
+| TrainMNIST_89973_00000 | RUNNING  | 100.97.65.109:19732 | 0.3625 |      1 |         0.347481 |
++------------------------+----------+---------------------+--------+--------+------------------+
+
+
+Result for TrainMNIST_89973_00000:
+  date: 2022-10-13_16-27-14
+  done: true
+  experiment_id: 0ac505bd948b44f2b86d94722e4c1361
+  hostname: learnfair0235
+  iterations_since_restore: 10
+  mean_accuracy: 0.8875
+  node_ip: 100.97.65.109
+  pid: 19732
+  time_since_restore: 2.3831028938293457
+  time_this_iter_s: 0.21859073638916016
+  time_total_s: 2.3831028938293457
+  timestamp: 1665703634
+  timesteps_since_restore: 0
+  training_iteration: 10
+  trial_id: '89973_00000'
+  
+== Status ==
+Current time: 2022-10-13 16:27:14 (running for 00:00:13.97)
+Memory usage on this node: 56.8/503.8 GiB
+Using AsyncHyperBand: num_stopped=0
+Bracket: Iter 64.000: None | Iter 16.000: None | Iter 4.000: 0.809375 | Iter 1.000: 0.3625
+Resources requested: 0/80 CPUs, 0/1 GPUs, 0.0/308.5 GiB heap, 0.0/136.2 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/TrainMNIST_2022-10-13_16-27-00
+Number of trials: 1/1 (1 TERMINATED)
++------------------------+------------+---------------------+--------+--------+------------------+
+| Trial name             | status     | loc                 |    acc |   iter |   total time (s) |
+|------------------------+------------+---------------------+--------+--------+------------------|
+| TrainMNIST_89973_00000 | TERMINATED | 100.97.65.109:19732 | 0.8875 |     10 |           2.3831 |
++------------------------+------------+---------------------+--------+--------+------------------+
+
+
+Best config is: {'num_workers': 60, 'num_gpus': 2, 'use_gpu': True}
+SUCCESS

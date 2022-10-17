@@ -1,0 +1,51 @@
+2022-10-17 11:29:33,224	INFO services.py:1338 -- View the Ray dashboard at [1m[32mhttp://127.0.0.1:8265[39m[22m
+INFO:ray.worker:Using address auto set in the environment variable RAY_ADDRESS
+2022-10-17 11:29:57,241	INFO worker.py:842 -- Connecting to existing Ray cluster at address: 100.97.70.7:6888
+[2022-10-17 11:29:57,260 I 2732353 2732353] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to -1
+DEBUG:compiler_gym.service.connection:Exec `./example_service.py --working_dir=/dev/shm/compiler_gym_dejang/s/1017T112957-416043-9722 --alsologtostderr -v=1 --logbuflevel=-1`
+I1017 11:30:01.134425 140124007117632 create_and_run_compiler_gym_service.py:117] Service /dev/shm/compiler_gym_dejang/s/1017T112957-416043-9722 listening on 46465, PID = 2733292
+I1017 11:30:01.419368 140122100070144 compiler_gym_service.py:105] GetSpaces()
+DEBUG:compiler_gym.service.client_service_compiler_env:Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/012345
+I1017 11:30:01.446781 140124007117632 create_and_run_compiler_gym_service.py:48] Service received signal: 15
+I1017 11:30:01.447135 140124007117632 create_and_run_compiler_gym_service.py:130] Shutting down the RPC service
+I1017 11:30:01.448235 140124007117632 create_and_run_compiler_gym_service.py:133] Service closed
+/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/ray/tune/callback.py:217: FutureWarning: Please update `setup` method in callback `<class 'ray.tune.integration.wandb.WandbLoggerCallback'>` to match the method signature in `ray.tune.callback.Callback`.
+  warnings.warn(
+DEBUG:git.cmd:Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/private/home/dejang/tools/cg_rllib_slurm, universal_newlines=False, shell=None, istream=None)
+[2m[36m(PPO pid=2733483)[0m 2022-10-17 11:30:11,465	INFO ppo.py:166 -- In multi-agent mode, policies will be optimized sequentially by the multi-GPU optimizer. Consider setting simple_optimizer=True if this doesn't work for you.
+[2m[36m(PPO pid=2733483)[0m 2022-10-17 11:30:11,465	INFO trainer.py:743 -- Current log_level is ERROR. For more information, set 'log_level': 'INFO' / 'DEBUG' or use the -v and -vv flags.
+[2m[33m(raylet)[0m [2022-10-17 11:30:56,905 E 2735016 2735016] core_worker.cc:451: Failed to register worker 3606ae89d806961abf7385c088abe984e30712134b276bd0436925a5 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:30:57,582 E 2735054 2735054] core_worker.cc:451: Failed to register worker 25d70c307a24dd00e1ba7dbc0bdf9b55efb4878fe3e1c496bf3c53bc to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:30:59,852 E 2735087 2735087] core_worker.cc:451: Failed to register worker 7ed411df1c66b47fd1b3199bd0a9b53ad99a58f187fe48d8bd5fd03e to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:01,562 E 2735407 2735407] core_worker.cc:451: Failed to register worker e908c8d94d0e6877928ff4a2b35e365fbd99fa7bd9150d2b6cf23168 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:02,639 E 2735251 2735251] core_worker.cc:451: Failed to register worker c91eb5b88cdda77ebe5593f6071da377051a2c79c2825b409c08de05 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:04,633 E 2735436 2735436] core_worker.cc:451: Failed to register worker fe3929b42b293820a9ba72fce4c7ea581b1fa7b61cddaab94ed98718 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:07,244 E 2735476 2735476] core_worker.cc:451: Failed to register worker 4cbfecdd4be810876871766df3413374df98542e914d88375d0b4b2e to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:09,913 E 2735549 2735549] core_worker.cc:451: Failed to register worker e7946eefbf037812a42a0513e7d6ebb67cd2d76272ff81d7e34afac2 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:10,285 E 2735568 2735568] core_worker.cc:451: Failed to register worker 57801457f3f9d847bca1c33513009c1026197e39b77c0b5c22e6b413 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:13,907 E 2735604 2735604] core_worker.cc:451: Failed to register worker 6ab9ea9926a71532d9c82d7cdd8b81451daefd32c5b50c30db581c41 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:16,189 E 2735638 2735638] core_worker.cc:451: Failed to register worker e9f06c5e8f58dc011339c4bba607226bdde37852142ea0aaf7d4d965 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:16,831 E 2735697 2735697] core_worker.cc:451: Failed to register worker a9abf544eb53dc069c5e9320d5bb7a8db8b8248d68db308a6352314e to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:20,269 E 2735721 2735721] core_worker.cc:451: Failed to register worker 213ba28484fe0e1c2600d161bd08f542adb8dd29c7fa3ef1b81333d5 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:21,167 E 2735810 2735810] core_worker.cc:451: Failed to register worker c3a4bdc7f81503bf44c3b8a449385f528ea953eb5d4faa55da0e9955 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:21,603 E 2735877 2735877] core_worker.cc:451: Failed to register worker dea812d3a3991b57beace540695f3e91d51927c7e991458ec1c1e3a6 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:25,068 E 2735935 2735935] core_worker.cc:451: Failed to register worker ec6121da0cb271938c2c5e9cbb886909d05729ef799f8cb06e977f6d to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:26,424 E 2735975 2735975] core_worker.cc:451: Failed to register worker 03a601d894836d631db0826b95ca12352a16b11c6659803de783554d to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:32,537 E 2736017 2736017] core_worker.cc:451: Failed to register worker 6bfcf5eb709086efd98a1b1bcb4f95e83cb707373b37c921f06b4a20 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:34,726 E 2736212 2736212] core_worker.cc:451: Failed to register worker 1f5dd428bfac04c7d7ff8ed08b0f974f9c573c0d261c5a2a8f8b3d1f to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:40,145 E 2736280 2736280] core_worker.cc:451: Failed to register worker 1c88f0b0e81bfd1ba3bd6b3462650e283fd42ef4ad309606b962f489 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:42,359 E 2736405 2736405] core_worker.cc:451: Failed to register worker e2e013c00d0fe132d426f00a2c633969115cd58a68d85039fd6713f8 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:44,878 E 2736543 2736543] core_worker.cc:451: Failed to register worker 543753d39685989daf7e75833ff1d53a6f92439278903febe7363999 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:51,748 E 2736578 2736578] core_worker.cc:451: Failed to register worker 86e822ef05bfbf4b0be2d2a372601cdd5f0857b75401507ed20fa3aa to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:54,855 E 2736600 2736600] core_worker.cc:451: Failed to register worker 56556473f89de15214d8e2c2632288e3838c5ccfb5c12422aa495d12 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:31:59,093 E 2736651 2736651] core_worker.cc:451: Failed to register worker 83f523344c248abd3c89a3e42245234ff5a582424275f783aba073c3 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:32:02,153 E 2736685 2736685] core_worker.cc:451: Failed to register worker 2dd95d875207b1140bf9fb769ceacf8fdd62da53dc0202fa489f03d0 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:32:05,790 E 2736731 2736731] core_worker.cc:451: Failed to register worker 6aafcd1e4161cd089ac77f292689dd32d3c12c84e7c03e35d1a8a016 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:32:10,116 E 2736751 2736751] core_worker.cc:451: Failed to register worker bc40d8cd0553023f85ca4dddc40d3a8809adea8d2615099fb26d8a97 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:32:14,495 E 2736769 2736769] core_worker.cc:451: Failed to register worker 850a28552759194dd66dd63efd6b296e1dfb437bfc1ca829517f810f to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:32:19,605 E 2736753 2736753] core_worker.cc:451: Failed to register worker 1a2d792d2ae41ead5949f66d18a03723179ed5398a1426324b8680cb to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:32:24,214 E 2736786 2736786] core_worker.cc:451: Failed to register worker f196d72f29822f0417dcd37f4823f562f8e31be4822c553373e1ddbb to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 11:32:29,449 E 2736808 2736808] core_worker.cc:451: Failed to register worker 6d82d8cd6b64a886d3f3a64341241e462946026c190dc1ca7e72b542 to Raylet. Invalid: Invalid: Unknown worker
+slurmstepd: error: *** STEP 65663284.1 ON learnfair0489 CANCELLED AT 2022-10-17T11:32:32 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 65663284 ON learnfair0489 CANCELLED AT 2022-10-17T11:32:32 DUE TO TIME LIMIT ***

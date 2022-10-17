@@ -13,3 +13,14 @@ To run CompilerGym:
 python launcher/slurm_launch.py --app=main_cg.py
 ```
 
+To run ExampleCompilerGym:
+```
+python setup.py install
+python launcher/slurm_launch.py --app=main_ecg.py
+```
+
+
+To run LoopToolCompilerGym:
+```
+python launcher/slurm_launch.py --app=main_ltcg.py
+```

@@ -1,0 +1,50 @@
+Address Head: 100.97.90.35:6888
+RAY_ADDRESS: auto
+REDIS_PASSWORD: 6decee03-d615-4889-b398-a729900fdff7
+Starting HEAD at learnfair0385
+SUCCESS
+Worker number = 0
+Starting command: 
+2022-10-13 16:26:43,083	INFO scripts.py:612 -- Local node IP: 100.97.90.35
+2022-10-13 16:26:50,535	SUCC scripts.py:651 -- --------------------
+2022-10-13 16:26:50,535	SUCC scripts.py:652 -- Ray runtime started.
+2022-10-13 16:26:50,535	SUCC scripts.py:653 -- --------------------
+2022-10-13 16:26:50,535	INFO scripts.py:655 -- Next steps
+2022-10-13 16:26:50,535	INFO scripts.py:656 -- To connect to this Ray runtime from another node, run
+2022-10-13 16:26:50,536	INFO scripts.py:660 --   ray start --address='100.97.90.35:6888' --redis-password='6decee03-d615-4889-b398-a729900fdff7'
+2022-10-13 16:26:50,536	INFO scripts.py:665 -- Alternatively, use the following Python code:
+2022-10-13 16:26:50,537	INFO scripts.py:668 -- import ray
+2022-10-13 16:26:50,537	INFO scripts.py:669 -- ray.init(address='auto', _redis_password='6decee03-d615-4889-b398-a729900fdff7')
+2022-10-13 16:26:50,537	INFO scripts.py:677 -- To connect to this Ray runtime from outside of the cluster, for example to
+2022-10-13 16:26:50,537	INFO scripts.py:679 -- connect to a remote cluster from your laptop directly, use the following
+2022-10-13 16:26:50,537	INFO scripts.py:681 -- Python code:
+2022-10-13 16:26:50,538	INFO scripts.py:684 -- import ray
+2022-10-13 16:26:50,538	INFO scripts.py:685 -- ray.init(address='ray://<head_node_ip_address>:10001')
+2022-10-13 16:26:50,538	INFO scripts.py:691 -- If connection fails, check your firewall settings and network configuration.
+2022-10-13 16:26:50,538	INFO scripts.py:696 -- To terminate the Ray runtime, run
+2022-10-13 16:26:50,538	INFO scripts.py:697 --   ray stop
+2022-10-13 16:26:50,538	INFO scripts.py:765 -- --block
+2022-10-13 16:26:50,538	INFO scripts.py:766 -- This command will now block until terminated by a signal.
+2022-10-13 16:26:50,538	INFO scripts.py:768 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly.
+Action space: Commandline([-break-crit-edges -early-cse-memssa -gvn-hoist -gvn -instcombine -instsimplify -jump-threading -loop-reduce -loop-rotate -loop-versioning -mem2reg -newgvn -reg2mem -simplifycfg -sroa])
+Observation space: Box([0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0], [9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807], (56,), int64)
+Reward space: IrInstructionCountOz

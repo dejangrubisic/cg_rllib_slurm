@@ -1,0 +1,75 @@
+Address Head: 100.97.90.35:6888
+RAY_ADDRESS: auto
+REDIS_PASSWORD: fc491fb2-fa5e-454b-b9fe-5d9de2f2d179
+Starting HEAD at learnfair0385
+SUCCESS
+Worker number = 0
+Starting command: 
+2022-10-17 12:52:18,719	INFO scripts.py:612 -- Local node IP: 100.97.90.35
+2022-10-17 12:52:25,652	SUCC scripts.py:651 -- --------------------
+2022-10-17 12:52:25,652	SUCC scripts.py:652 -- Ray runtime started.
+2022-10-17 12:52:25,652	SUCC scripts.py:653 -- --------------------
+2022-10-17 12:52:25,652	INFO scripts.py:655 -- Next steps
+2022-10-17 12:52:25,652	INFO scripts.py:656 -- To connect to this Ray runtime from another node, run
+2022-10-17 12:52:25,652	INFO scripts.py:660 --   ray start --address='100.97.90.35:6888' --redis-password='fc491fb2-fa5e-454b-b9fe-5d9de2f2d179'
+2022-10-17 12:52:25,652	INFO scripts.py:665 -- Alternatively, use the following Python code:
+2022-10-17 12:52:25,653	INFO scripts.py:668 -- import ray
+2022-10-17 12:52:25,653	INFO scripts.py:669 -- ray.init(address='auto', _redis_password='fc491fb2-fa5e-454b-b9fe-5d9de2f2d179')
+2022-10-17 12:52:25,653	INFO scripts.py:677 -- To connect to this Ray runtime from outside of the cluster, for example to
+2022-10-17 12:52:25,653	INFO scripts.py:679 -- connect to a remote cluster from your laptop directly, use the following
+2022-10-17 12:52:25,653	INFO scripts.py:681 -- Python code:
+2022-10-17 12:52:25,654	INFO scripts.py:684 -- import ray
+2022-10-17 12:52:25,654	INFO scripts.py:685 -- ray.init(address='ray://<head_node_ip_address>:10001')
+2022-10-17 12:52:25,654	INFO scripts.py:691 -- If connection fails, check your firewall settings and network configuration.
+2022-10-17 12:52:25,654	INFO scripts.py:696 -- To terminate the Ray runtime, run
+2022-10-17 12:52:25,654	INFO scripts.py:697 --   ray stop
+2022-10-17 12:52:25,654	INFO scripts.py:765 -- --block
+2022-10-17 12:52:25,654	INFO scripts.py:766 -- This command will now block until terminated by a signal.
+2022-10-17 12:52:25,654	INFO scripts.py:768 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly.
+Running with following CLI options: Namespace(debug=False, iter=2, local_mode=False, policy='', run='PPO', size=1000000, slurm=True, sweep=0)
+SLURM options:  auto 100.97.90.35 fc491fb2-fa5e-454b-b9fe-5d9de2f2d179
+1017 12:52:46 ray.worker] Using address auto set in the environment variable RAY_ADDRESS
+1017 12:52:47 compiler_gym.service.connection] Exec `./example_service.py --working_dir=/dev/shm/compiler_gym_dejang/s/1017T125247-160532-3326 --alsologtostderr -v=1 --logbuflevel=-1`
+1017 12:52:50 compiler_gym.service.client_service_compiler_env] Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/012345
+Action space: NamedDiscrete([up, down, swap_up, swap_down])
+Observation space: Box([[0. 0. 0. ... 0. 0. 0.]], [[1. 1. 1. ... 1. 1. 1.]], (1, 1160), float32)
+Reward space: flops_loop_nest_tensor
+Train params:  {'log_level': 'DEBUG', 'env': 'compiler_gym', 'framework': 'torch', 'model': {'custom_model': 'my_model', 'vf_share_layers': True, 'fcnet_hiddens': [512, 512, 512, 512]}, 'num_gpus': 1, 'rollout_fragment_length': 100, 'train_batch_size': 7900, 'num_sgd_iter': 50, 'explore': True, 'gamma': 0.9, 'lr': 1e-06, 'num_workers': 79} {'training_iteration': 2} 
+1017 12:52:50 compiler_gym.service.connection] Exec `./example_service.py --working_dir=/dev/shm/compiler_gym_dejang/s/1017T125250-851400-068e --alsologtostderr -v=1 --logbuflevel=-1`
+1017 12:52:54 compiler_gym.service.client_service_compiler_env] Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/012345
+Number of benchmarks for training: 576
+Number of benchmarks for validation: 144
+1017 12:52:54 compiler_gym.service.connection] Exec `./example_service.py --working_dir=/dev/shm/compiler_gym_dejang/s/1017T125254-336716-4ec5 --alsologtostderr -v=1 --logbuflevel=-1`
+1017 12:52:57 compiler_gym.service.client_service_compiler_env] Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/012345
+1017 12:52:57 compiler_gym.service.client_service_compiler_env] Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/351204
+benchmark://mm32_8_16_8_4_16-v0/351204
+1017 12:52:57 compiler_gym.service.client_service_compiler_env] Ending session 0
+1017 12:52:57 compiler_gym.service.client_service_compiler_env] Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/104352
+benchmark://mm32_8_16_8_4_16-v0/104352
+1017 12:52:57 compiler_gym.service.client_service_compiler_env] Ending session 1
+1017 12:52:57 compiler_gym.service.client_service_compiler_env] Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/520341
+benchmark://mm32_8_16_8_4_16-v0/520341
+hhh1______________________
+Before tune.run, stop = {'training_iteration': 2}
+== Status ==
+Current time: 2022-10-17 12:52:58 (running for 00:00:00.21)
+Memory usage on this node: 42.0/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 0/80 CPUs, 0/1 GPUs, 0.0/318.88 GiB heap, 0.0/140.65 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-17_12-52-58
+Number of trials: 1/1 (1 PENDING)
++------------------------------+----------+-------+
+| Trial name                   | status   | loc   |
+|------------------------------+----------+-------|
+| PPO_compiler_gym_4cc88_00000 | PENDING  |       |
++------------------------------+----------+-------+
+
+
+1017 12:53:00 git.cmd] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/private/home/dejang/tools/cg_rllib_slurm, universal_newlines=False, shell=None, istream=None)
+1017 12:53:02 urllib3.connectionpool] Starting new HTTPS connection (1): api.wandb.ai:443
+1017 12:53:03 urllib3.connectionpool] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 521
+1017 12:53:03 urllib3.connectionpool] Starting new HTTPS connection (1): api.wandb.ai:443
+1017 12:53:03 urllib3.connectionpool] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 325
+1017 12:53:03 git.cmd] Popen(['git', 'cat-file', '--batch-check'], cwd=/private/home/dejang/tools/cg_rllib_slurm, universal_newlines=False, shell=None, istream=<valid stream>)
+1017 12:54:04 urllib3.connectionpool] Starting new HTTPS connection (1): o151352.ingest.sentry.io:443
+1017 12:54:04 urllib3.connectionpool] https://o151352.ingest.sentry.io:443 "POST /api/5288891/envelope/ HTTP/1.1" 200 2

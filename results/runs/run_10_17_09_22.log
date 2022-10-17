@@ -1,0 +1,192 @@
+Address Head: 100.97.65.167:6888
+RAY_ADDRESS: auto
+REDIS_PASSWORD: 449319aa-ed7a-46bc-879e-66438103a3de
+Starting HEAD at learnfair0253
+SUCCESS
+Worker number = 0
+Starting command: 
+2022-10-17 09:24:16,260	INFO scripts.py:612 -- Local node IP: 100.97.65.167
+2022-10-17 09:24:23,333	SUCC scripts.py:651 -- --------------------
+2022-10-17 09:24:23,333	SUCC scripts.py:652 -- Ray runtime started.
+2022-10-17 09:24:23,333	SUCC scripts.py:653 -- --------------------
+2022-10-17 09:24:23,333	INFO scripts.py:655 -- Next steps
+2022-10-17 09:24:23,333	INFO scripts.py:656 -- To connect to this Ray runtime from another node, run
+2022-10-17 09:24:23,333	INFO scripts.py:660 --   ray start --address='100.97.65.167:6888' --redis-password='449319aa-ed7a-46bc-879e-66438103a3de'
+2022-10-17 09:24:23,333	INFO scripts.py:665 -- Alternatively, use the following Python code:
+2022-10-17 09:24:23,334	INFO scripts.py:668 -- import ray
+2022-10-17 09:24:23,334	INFO scripts.py:669 -- ray.init(address='auto', _redis_password='449319aa-ed7a-46bc-879e-66438103a3de')
+2022-10-17 09:24:23,334	INFO scripts.py:677 -- To connect to this Ray runtime from outside of the cluster, for example to
+2022-10-17 09:24:23,334	INFO scripts.py:679 -- connect to a remote cluster from your laptop directly, use the following
+2022-10-17 09:24:23,334	INFO scripts.py:681 -- Python code:
+2022-10-17 09:24:23,335	INFO scripts.py:684 -- import ray
+2022-10-17 09:24:23,335	INFO scripts.py:685 -- ray.init(address='ray://<head_node_ip_address>:10001')
+2022-10-17 09:24:23,335	INFO scripts.py:691 -- If connection fails, check your firewall settings and network configuration.
+2022-10-17 09:24:23,335	INFO scripts.py:696 -- To terminate the Ray runtime, run
+2022-10-17 09:24:23,335	INFO scripts.py:697 --   ray stop
+2022-10-17 09:24:23,335	INFO scripts.py:765 -- --block
+2022-10-17 09:24:23,335	INFO scripts.py:766 -- This command will now block until terminated by a signal.
+2022-10-17 09:24:23,336	INFO scripts.py:768 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly.
+Action space: Commandline([-break-crit-edges -early-cse-memssa -gvn-hoist -gvn -instcombine -instsimplify -jump-threading -loop-reduce -loop-rotate -loop-versioning -mem2reg -newgvn -reg2mem -simplifycfg -sroa])
+Observation space: Box([0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0], [9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807 9223372036854775807
+ 9223372036854775807 9223372036854775807], (56,), int64)
+Reward space: IrInstructionCountOz
+Number of benchmarks for training: 50
+Number of benchmarks for validation: 5
+Number of benchmarks for testing: 12
+benchmark://npb-v0/1
+benchmark://npb-v0/2
+benchmark://npb-v0/3
+auto 100.97.65.167 449319aa-ed7a-46bc-879e-66438103a3de
+--- 2
+1017 09:24:46 ray.worker] Using address auto set in the environment variable RAY_ADDRESS
+--- 3
+== Status ==
+Current time: 2022-10-17 09:24:47 (running for 00:00:00.20)
+Memory usage on this node: 65.3/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 0/80 CPUs, 0/1 GPUs, 0.0/311.44 GiB heap, 0.0/137.47 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-17_09-24-47
+Number of trials: 1/1 (1 PENDING)
++------------------------------+----------+-------+
+| Trial name                   | status   | loc   |
+|------------------------------+----------+-------|
+| PPO_compiler_gym_376c7_00000 | PENDING  |       |
++------------------------------+----------+-------+
+
+
+1017 09:24:51 git.cmd] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/private/home/dejang/tools/cg_rllib_slurm, universal_newlines=False, shell=None, istream=None)
+1017 09:24:53 urllib3.connectionpool] Starting new HTTPS connection (1): api.wandb.ai:443
+1017 09:24:54 urllib3.connectionpool] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 521
+1017 09:24:54 urllib3.connectionpool] Starting new HTTPS connection (1): api.wandb.ai:443
+1017 09:24:54 urllib3.connectionpool] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 325
+1017 09:24:54 git.cmd] Popen(['git', 'cat-file', '--batch-check'], cwd=/private/home/dejang/tools/cg_rllib_slurm, universal_newlines=False, shell=None, istream=<valid stream>)
+== Status ==
+Current time: 2022-10-17 09:25:11 (running for 00:00:23.65)
+Memory usage on this node: 65.5/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/311.44 GiB heap, 0.0/137.47 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-17_09-24-47
+Number of trials: 1/1 (1 RUNNING)
++------------------------------+----------+----------------------+
+| Trial name                   | status   | loc                  |
+|------------------------------+----------+----------------------|
+| PPO_compiler_gym_376c7_00000 | RUNNING  | 100.97.65.167:459410 |
++------------------------------+----------+----------------------+
+
+
+Result for PPO_compiler_gym_376c7_00000:
+  agent_timesteps_total: 5
+  custom_metrics: {}
+  date: 2022-10-17_09-25-11
+  done: true
+  episode_len_mean: 5.0
+  episode_media: {}
+  episode_reward_max: 0.6375838926174497
+  episode_reward_mean: 0.6375838926174497
+  episode_reward_min: 0.6375838926174497
+  episodes_this_iter: 1
+  episodes_total: 1
+  experiment_id: f29bc5d95d2e49beb8b3d4648fae0233
+  hostname: learnfair0253
+  info:
+    learner:
+      default_policy:
+        custom_metrics: {}
+        learner_stats:
+          cur_kl_coeff: 0.20000000298023224
+          cur_lr: 4.999999873689376e-05
+          entropy: 2.7062771320343018
+          entropy_coeff: 0.0
+          kl: 0.0015765030402690172
+          model: {}
+          policy_loss: -0.09374944120645523
+          total_loss: 0.0652589276432991
+          vf_explained_var: 0.02418994903564453
+          vf_loss: 0.15869306027889252
+    num_agent_steps_sampled: 5
+    num_agent_steps_trained: 5
+    num_steps_sampled: 5
+    num_steps_trained: 5
+  iterations_since_restore: 1
+  node_ip: 100.97.65.167
+  num_healthy_workers: 1
+  off_policy_estimator: {}
+  perf:
+    cpu_util_percent: 34.15
+    ram_util_percent: 13.1
+  pid: 459410
+  policy_reward_max: {}
+  policy_reward_mean: {}
+  policy_reward_min: {}
+  sampler_perf:
+    mean_action_processing_ms: 0.10581811269124348
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 31.79085254669189
+    mean_inference_ms: 6.594022115071614
+    mean_raw_obs_processing_ms: 32.30730692545573
+  time_since_restore: 0.780066728591919
+  time_this_iter_s: 0.780066728591919
+  time_total_s: 0.780066728591919
+  timers:
+    learn_throughput: 15.112
+    learn_time_ms: 330.855
+    load_throughput: 24643.384
+    load_time_ms: 0.203
+    sample_throughput: 10.486
+    sample_time_ms: 476.833
+    update_time_ms: 3.247
+  timestamp: 1666023911
+  timesteps_since_restore: 0
+  timesteps_this_iter: 0
+  timesteps_total: 5
+  training_iteration: 1
+  trial_id: 376c7_00000
+  
+== Status ==
+Current time: 2022-10-17 09:25:15 (running for 00:00:27.73)
+Memory usage on this node: 71.2/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 2.0/80 CPUs, 0/1 GPUs, 0.0/311.44 GiB heap, 0.0/137.47 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-17_09-24-47
+Number of trials: 1/1 (1 RUNNING)
++------------------------------+----------+----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                   | status   | loc                  |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------+----------+----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_compiler_gym_376c7_00000 | RUNNING  | 100.97.65.167:459410 |      1 |         0.780067 |    5 | 0.637584 |             0.637584 |             0.637584 |                  5 |
++------------------------------+----------+----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2022-10-17 09:25:15 (running for 00:00:27.76)
+Memory usage on this node: 71.3/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 0/80 CPUs, 0/1 GPUs, 0.0/311.44 GiB heap, 0.0/137.47 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-17_09-24-47
+Number of trials: 1/1 (1 TERMINATED)
++------------------------------+------------+----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+| Trial name                   | status     | loc                  |   iter |   total time (s) |   ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------+------------+----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------|
+| PPO_compiler_gym_376c7_00000 | TERMINATED | 100.97.65.167:459410 |      1 |         0.780067 |    5 | 0.637584 |             0.637584 |             0.637584 |                  5 |
++------------------------------+------------+----------------------+--------+------------------+------+----------+----------------------+----------------------+--------------------+
+
+
+Best config is: None
+SUCCESS

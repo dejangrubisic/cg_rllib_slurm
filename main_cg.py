@@ -100,7 +100,7 @@ with make_env() as env:
   train_benchmarks, val_benchmarks = train_benchmarks[:50], train_benchmarks[50:]
   # We will use the entire chstone-v0 dataset for testing.
   test_benchmarks = list(chstone.benchmarks())
-
+  breakpoint()  
 print("Number of benchmarks for training:", len(train_benchmarks))
 print("Number of benchmarks for validation:", len(val_benchmarks))
 print("Number of benchmarks for testing:", len(test_benchmarks))
@@ -145,17 +145,19 @@ if __name__ == "__main__":
     redis_password = os.environ["REDIS_PASSWORD"] if "REDIS_PASSWORD" in os.environ else "5241590000000000"
     print(ray_address, head_node_ip, redis_password)
 
+    print("--- 2")
     ray.init(address=ray_address, _node_ip_address=head_node_ip, _redis_password=redis_password)
 
     # sched = ASHAScheduler(metric="mean_accuracy", mode="max")
 
     tune.register_env("compiler_gym", make_training_env)
-    
+    print("--- 3")
     analysis = tune.run(
         PPOTrainer,
         checkpoint_at_end=True,
         stop={
             "episodes_total": 500,
+            "training_iteration": 1
         },
         config={
             "seed": 0xCC,

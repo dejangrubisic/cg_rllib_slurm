@@ -1,0 +1,53 @@
+Address Head: 100.97.70.7:6888
+RAY_ADDRESS: auto
+REDIS_PASSWORD: 8aa44b91-c905-4625-a48e-0e117e9b7c30
+Starting HEAD at learnfair0489
+SUCCESS
+Worker number = 0
+Starting command: 
+2022-10-17 11:29:27,221	INFO scripts.py:612 -- Local node IP: 100.97.70.7
+2022-10-17 11:29:34,599	SUCC scripts.py:651 -- --------------------
+2022-10-17 11:29:34,599	SUCC scripts.py:652 -- Ray runtime started.
+2022-10-17 11:29:34,599	SUCC scripts.py:653 -- --------------------
+2022-10-17 11:29:34,599	INFO scripts.py:655 -- Next steps
+2022-10-17 11:29:34,599	INFO scripts.py:656 -- To connect to this Ray runtime from another node, run
+2022-10-17 11:29:34,600	INFO scripts.py:660 --   ray start --address='100.97.70.7:6888' --redis-password='8aa44b91-c905-4625-a48e-0e117e9b7c30'
+2022-10-17 11:29:34,600	INFO scripts.py:665 -- Alternatively, use the following Python code:
+2022-10-17 11:29:34,600	INFO scripts.py:668 -- import ray
+2022-10-17 11:29:34,601	INFO scripts.py:669 -- ray.init(address='auto', _redis_password='8aa44b91-c905-4625-a48e-0e117e9b7c30')
+2022-10-17 11:29:34,601	INFO scripts.py:677 -- To connect to this Ray runtime from outside of the cluster, for example to
+2022-10-17 11:29:34,601	INFO scripts.py:679 -- connect to a remote cluster from your laptop directly, use the following
+2022-10-17 11:29:34,601	INFO scripts.py:681 -- Python code:
+2022-10-17 11:29:34,601	INFO scripts.py:684 -- import ray
+2022-10-17 11:29:34,602	INFO scripts.py:685 -- ray.init(address='ray://<head_node_ip_address>:10001')
+2022-10-17 11:29:34,602	INFO scripts.py:691 -- If connection fails, check your firewall settings and network configuration.
+2022-10-17 11:29:34,602	INFO scripts.py:696 -- To terminate the Ray runtime, run
+2022-10-17 11:29:34,602	INFO scripts.py:697 --   ray stop
+2022-10-17 11:29:34,602	INFO scripts.py:765 -- --block
+2022-10-17 11:29:34,602	INFO scripts.py:766 -- This command will now block until terminated by a signal.
+2022-10-17 11:29:34,602	INFO scripts.py:768 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly.
+Running with following CLI options: Namespace(debug=False, iter=2, local_mode=False, policy='', run='PPO', size=1000000, slurm=True, sweep=0)
+SLURM options:  auto 100.97.70.7 8aa44b91-c905-4625-a48e-0e117e9b7c30
+1017 11:29:57 ray.worker] Using address auto set in the environment variable RAY_ADDRESS
+Train params:  {'log_level': 'ERROR', 'env': 'compiler_gym', 'framework': 'torch', 'model': {'custom_model': 'my_model', 'vf_share_layers': True, 'fcnet_hiddens': [512, 512, 512, 512]}, 'num_gpus': 1, 'rollout_fragment_length': 100, 'train_batch_size': 7900, 'num_sgd_iter': 50, 'explore': True, 'gamma': 0.9, 'lr': 1e-06, 'num_workers': 79} {'training_iteration': 2} 
+1017 11:29:57 compiler_gym.service.connection] Exec `./example_service.py --working_dir=/dev/shm/compiler_gym_dejang/s/1017T112957-416043-9722 --alsologtostderr -v=1 --logbuflevel=-1`
+1017 11:30:01 compiler_gym.service.client_service_compiler_env] Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/012345
+Number of benchmarks for training: 576
+Number of benchmarks for validation: 144
+hhh1______________________
+Before tune.run, stop = {'training_iteration': 2}
+== Status ==
+Current time: 2022-10-17 11:30:02 (running for 00:00:00.22)
+Memory usage on this node: 108.7/503.8 GiB
+Using FIFO scheduling algorithm.
+Resources requested: 0/80 CPUs, 0/1 GPUs, 0.0/268.06 GiB heap, 0.0/118.87 GiB objects (0.0/1.0 accelerator_type:V100)
+Result logdir: /private/home/dejang/ray_results/PPO_2022-10-17_11-30-01
+Number of trials: 1/1 (1 PENDING)
++------------------------------+----------+-------+
+| Trial name                   | status   | loc   |
+|------------------------------+----------+-------|
+| PPO_compiler_gym_b6ae1_00000 | PENDING  |       |
++------------------------------+----------+-------+
+
+
+1017 11:30:04 git.cmd] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/private/home/dejang/tools/cg_rllib_slurm, universal_newlines=False, shell=None, istream=None)

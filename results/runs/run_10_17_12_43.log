@@ -1,0 +1,32 @@
+Address Head: 100.97.65.171:6888
+RAY_ADDRESS: auto
+REDIS_PASSWORD: a470ae9a-8e4e-4672-a261-9682707b1a19
+Starting HEAD at learnfair0257
+SUCCESS
+Worker number = 0
+Starting command: 
+2022-10-17 12:45:24,816	INFO scripts.py:612 -- Local node IP: 100.97.65.171
+2022-10-17 12:45:31,740	SUCC scripts.py:651 -- --------------------
+2022-10-17 12:45:31,740	SUCC scripts.py:652 -- Ray runtime started.
+2022-10-17 12:45:31,740	SUCC scripts.py:653 -- --------------------
+2022-10-17 12:45:31,740	INFO scripts.py:655 -- Next steps
+2022-10-17 12:45:31,741	INFO scripts.py:656 -- To connect to this Ray runtime from another node, run
+2022-10-17 12:45:31,741	INFO scripts.py:660 --   ray start --address='100.97.65.171:6888' --redis-password='a470ae9a-8e4e-4672-a261-9682707b1a19'
+2022-10-17 12:45:31,741	INFO scripts.py:665 -- Alternatively, use the following Python code:
+2022-10-17 12:45:31,742	INFO scripts.py:668 -- import ray
+2022-10-17 12:45:31,742	INFO scripts.py:669 -- ray.init(address='auto', _redis_password='a470ae9a-8e4e-4672-a261-9682707b1a19')
+2022-10-17 12:45:31,742	INFO scripts.py:677 -- To connect to this Ray runtime from outside of the cluster, for example to
+2022-10-17 12:45:31,742	INFO scripts.py:679 -- connect to a remote cluster from your laptop directly, use the following
+2022-10-17 12:45:31,742	INFO scripts.py:681 -- Python code:
+2022-10-17 12:45:31,742	INFO scripts.py:684 -- import ray
+2022-10-17 12:45:31,743	INFO scripts.py:685 -- ray.init(address='ray://<head_node_ip_address>:10001')
+2022-10-17 12:45:31,743	INFO scripts.py:691 -- If connection fails, check your firewall settings and network configuration.
+2022-10-17 12:45:31,743	INFO scripts.py:696 -- To terminate the Ray runtime, run
+2022-10-17 12:45:31,743	INFO scripts.py:697 --   ray stop
+2022-10-17 12:45:31,743	INFO scripts.py:765 -- --block
+2022-10-17 12:45:31,743	INFO scripts.py:766 -- This command will now block until terminated by a signal.
+2022-10-17 12:45:31,743	INFO scripts.py:768 -- Running subprocesses are monitored and a message will be printed if any of them terminate unexpectedly.
+Running with following CLI options: Namespace(debug=False, iter=2, local_mode=False, policy='', run='PPO', size=1000000, slurm=True, sweep=0)
+SLURM options:  auto 100.97.65.171 a470ae9a-8e4e-4672-a261-9682707b1a19
+1017 12:45:55 ray.worker] Using address auto set in the environment variable RAY_ADDRESS
+SUCCESS

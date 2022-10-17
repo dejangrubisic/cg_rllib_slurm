@@ -90,9 +90,9 @@ if __name__ == "__main__":
                             # "momentum": tune.uniform(0.1, 0.9),
                             "use_gpu": True
                         },
-                        callbacks=[ WandbLoggerCallback(
-                                project="loop_tool_agent",
-                                api_key_file=str(LOOP_TOOL_ROOT) + "/wandb_key.txt",
-                                log_config=False)]
+                        # callbacks=[ WandbLoggerCallback(
+                        #         project="loop_tool_agent",
+                        #         api_key_file=str(LOOP_TOOL_ROOT) + "/wandb_key.txt",
+                        #         log_config=False)]
     )
     print("Best config is:", analysis.get_best_config(metric="mean_accuracy", mode="max"))

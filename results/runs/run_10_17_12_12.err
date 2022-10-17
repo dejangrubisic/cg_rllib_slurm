@@ -1,0 +1,161 @@
+srun: Job 65664307 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 65664307
+2022-10-17 12:20:33,788	INFO services.py:1338 -- View the Ray dashboard at [1m[32mhttp://127.0.0.1:8265[39m[22m
+INFO:ray.worker:Using address auto set in the environment variable RAY_ADDRESS
+2022-10-17 12:20:56,448	INFO worker.py:842 -- Connecting to existing Ray cluster at address: 100.97.65.171:6888
+[2022-10-17 12:20:56,467 I 2556872 2556872] logging.cc:191: Set ray log level from environment variable RAY_BACKEND_LOG_LEVEL to -1
+DEBUG:compiler_gym.service.connection:Exec `./example_service.py --working_dir=/dev/shm/compiler_gym_dejang/s/1017T122056-622478-f8e2 --alsologtostderr -v=1 --logbuflevel=-1`
+I1017 12:21:00.275177 140125264888640 create_and_run_compiler_gym_service.py:117] Service /dev/shm/compiler_gym_dejang/s/1017T122056-622478-f8e2 listening on 34175, PID = 2559343
+I1017 12:21:00.617154 140123349960448 compiler_gym_service.py:105] GetSpaces()
+DEBUG:compiler_gym.service.client_service_compiler_env:Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/012345
+I1017 12:21:00.643634 140125264888640 create_and_run_compiler_gym_service.py:48] Service received signal: 15
+I1017 12:21:00.643992 140125264888640 create_and_run_compiler_gym_service.py:130] Shutting down the RPC service
+I1017 12:21:00.644922 140125264888640 create_and_run_compiler_gym_service.py:133] Service closed
+DEBUG:compiler_gym.service.connection:Exec `./example_service.py --working_dir=/dev/shm/compiler_gym_dejang/s/1017T122101-162738-52bd --alsologtostderr -v=1 --logbuflevel=-1`
+I1017 12:21:04.193465 140650720047936 create_and_run_compiler_gym_service.py:117] Service /dev/shm/compiler_gym_dejang/s/1017T122101-162738-52bd listening on 40163, PID = 2560027
+I1017 12:21:04.407492 140648873404160 compiler_gym_service.py:105] GetSpaces()
+DEBUG:compiler_gym.service.client_service_compiler_env:Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/012345
+I1017 12:21:04.432232 140650720047936 create_and_run_compiler_gym_service.py:48] Service received signal: 15
+I1017 12:21:04.432589 140650720047936 create_and_run_compiler_gym_service.py:130] Shutting down the RPC service
+I1017 12:21:04.433520 140650720047936 create_and_run_compiler_gym_service.py:133] Service closed
+DEBUG:compiler_gym.service.connection:Exec `./example_service.py --working_dir=/dev/shm/compiler_gym_dejang/s/1017T122104-800025-2d92 --alsologtostderr -v=1 --logbuflevel=-1`
+I1017 12:21:08.022309 140206464176960 create_and_run_compiler_gym_service.py:117] Service /dev/shm/compiler_gym_dejang/s/1017T122104-800025-2d92 listening on 46327, PID = 2560510
+I1017 12:21:08.046458 140204617533184 compiler_gym_service.py:105] GetSpaces()
+DEBUG:compiler_gym.service.client_service_compiler_env:Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/012345
+DEBUG:compiler_gym.service.client_service_compiler_env:Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/541230
+I1017 12:21:08.072547 140204617533184 compiler_gym_service.py:114] StartSession(id=0, benchmark=benchmark://mm32_8_16_8_4_16-v0/541230), 1 active sessions
+I1017 12:21:08.073730 140204617533184 benchmark_cache.py:76] Cached benchmark benchmark://mm32_8_16_8_4_16-v0/541230. Cache size = 343 bytes, 1 items
+I1017 12:21:08.074381 140204617533184 compiler_gym_service.py:114] StartSession(id=0, benchmark=benchmark://mm32_8_16_8_4_16-v0/541230), 1 active sessions
+I1017 12:21:08.074545 140204617533184 example_service.py:280] Started a compilation session for benchmark://mm32_8_16_8_4_16-v0/541230
+E1017 12:21:08.074652 140204617533184 example_service.py:284] CRITICAL - 
+
+Working_dir = /dev/shm/compiler_gym_dejang/s/1017T122104-800025-2d92
+
+I1017 12:21:08.078819 140204617533184 loop_tool_env.py:83] for n_137 in 16 : L0  <<<<<< cursor (line 0 )
+ for m_98 in 4 : L1  
+  for n_137' in 8 : L2  
+   for k_99 in 16 : L3  
+    for k_99' in 8 : L4  
+     for m_98' in 32 : L5  
+      %2[m_98, k_99, n_137] <- multiply(%0, %1)  
+      %3[m_98, n_137] <- add(%2)  
+for m_98 in 32 : L8  
+ for m_98' in 4 : L9  
+  for n_137 in 128 : L10  
+   %4[m_98, n_137] <- write(%3)  
+
+I1017 12:21:08.100476 140204617533184 example_service.py:456] Computing observation from space loops_tensor
+I1017 12:21:08.103295 140204617533184 compiler_gym_service.py:188] Step()
+I1017 12:21:08.103435 140204617533184 example_service.py:456] Computing observation from space flops_loop_nest_tensor
+I1017 12:21:08.194087 140204617533184 loop_tool_env.py:150] <<<<<<<<<<<<<<< Reward = 5.93086811491532 GFLOPS >>>>>>>>>>>>>>>
+DEBUG:compiler_gym.service.client_service_compiler_env:Ending session 0
+I1017 12:21:08.196422 140204617533184 compiler_gym_service.py:176] EndSession(id=0), 0 sessions remaining
+DEBUG:compiler_gym.service.client_service_compiler_env:Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/321450
+I1017 12:21:08.197546 140204617533184 compiler_gym_service.py:114] StartSession(id=1, benchmark=benchmark://mm32_8_16_8_4_16-v0/321450), 1 active sessions
+I1017 12:21:08.198345 140204617533184 benchmark_cache.py:76] Cached benchmark benchmark://mm32_8_16_8_4_16-v0/321450. Cache size = 686 bytes, 2 items
+I1017 12:21:08.199087 140204617533184 compiler_gym_service.py:114] StartSession(id=1, benchmark=benchmark://mm32_8_16_8_4_16-v0/321450), 1 active sessions
+I1017 12:21:08.199213 140204617533184 example_service.py:280] Started a compilation session for benchmark://mm32_8_16_8_4_16-v0/321450
+E1017 12:21:08.199321 140204617533184 example_service.py:284] CRITICAL - 
+
+Working_dir = /dev/shm/compiler_gym_dejang/s/1017T122104-800025-2d92
+
+I1017 12:21:08.199761 140204617533184 loop_tool_env.py:83] for k_99 in 8 : L0  <<<<<< cursor (line 0 )
+ for k_99' in 16 : L1  
+  for n_137 in 8 : L2  
+   for m_98 in 4 : L3  
+    for n_137' in 16 : L4  
+     for m_98' in 32 : L5  
+      %2[m_98, k_99, n_137] <- multiply(%0, %1)  
+      %3[m_98, n_137] <- add(%2)  
+for m_98 in 32 : L8  
+ for m_98' in 4 : L9  
+  for n_137 in 128 : L10  
+   %4[m_98, n_137] <- write(%3)  
+
+I1017 12:21:08.200002 140204617533184 example_service.py:456] Computing observation from space loops_tensor
+I1017 12:21:08.202124 140204617533184 compiler_gym_service.py:188] Step()
+I1017 12:21:08.202243 140204617533184 example_service.py:456] Computing observation from space flops_loop_nest_tensor
+I1017 12:21:08.547650 140204617533184 loop_tool_env.py:150] <<<<<<<<<<<<<<< Reward = 1.4874705470969827 GFLOPS >>>>>>>>>>>>>>>
+DEBUG:compiler_gym.service.client_service_compiler_env:Ending session 1
+I1017 12:21:08.549424 140204617533184 compiler_gym_service.py:176] EndSession(id=1), 0 sessions remaining
+DEBUG:compiler_gym.service.client_service_compiler_env:Setting benchmark: benchmark://mm32_8_16_8_4_16-v0/340215
+I1017 12:21:08.550339 140204617533184 compiler_gym_service.py:114] StartSession(id=2, benchmark=benchmark://mm32_8_16_8_4_16-v0/340215), 1 active sessions
+I1017 12:21:08.551178 140204617533184 benchmark_cache.py:76] Cached benchmark benchmark://mm32_8_16_8_4_16-v0/340215. Cache size = 1029 bytes, 3 items
+I1017 12:21:08.551764 140204617533184 compiler_gym_service.py:114] StartSession(id=2, benchmark=benchmark://mm32_8_16_8_4_16-v0/340215), 1 active sessions
+I1017 12:21:08.551900 140204617533184 example_service.py:280] Started a compilation session for benchmark://mm32_8_16_8_4_16-v0/340215
+E1017 12:21:08.551991 140204617533184 example_service.py:284] CRITICAL - 
+
+Working_dir = /dev/shm/compiler_gym_dejang/s/1017T122104-800025-2d92
+
+I1017 12:21:08.552406 140204617533184 loop_tool_env.py:83] for k_99 in 8 : L0  <<<<<< cursor (line 0 )
+ for m_98 in 4 : L1  
+  for m_98' in 32 : L2  
+   for k_99' in 16 : L3  
+    for n_137 in 8 : L4  
+     for n_137' in 16 : L5  
+      %2[m_98, k_99, n_137] <- multiply(%0, %1)  
+      %3[m_98, n_137] <- add(%2)  
+for m_98 in 32 : L8  
+ for m_98' in 4 : L9  
+  for n_137 in 128 : L10  
+   %4[m_98, n_137] <- write(%3)  
+
+I1017 12:21:08.552754 140204617533184 example_service.py:456] Computing observation from space loops_tensor
+I1017 12:21:08.554729 140204617533184 compiler_gym_service.py:188] Step()
+I1017 12:21:08.554849 140204617533184 example_service.py:456] Computing observation from space flops_loop_nest_tensor
+I1017 12:21:08.582528 140204617533184 loop_tool_env.py:150] <<<<<<<<<<<<<<< Reward = 19.76552640631848 GFLOPS >>>>>>>>>>>>>>>
+I1017 12:21:08.584058 140204617533184 compiler_gym_service.py:176] EndSession(id=2), 0 sessions remaining
+I1017 12:21:08.584396 140206464176960 create_and_run_compiler_gym_service.py:48] Service received signal: 15
+I1017 12:21:08.584841 140206464176960 create_and_run_compiler_gym_service.py:130] Shutting down the RPC service
+I1017 12:21:08.585472 140206464176960 create_and_run_compiler_gym_service.py:133] Service closed
+/private/home/dejang/.conda/envs/compiler_gym/lib/python3.8/site-packages/ray/tune/callback.py:217: FutureWarning: Please update `setup` method in callback `<class 'ray.tune.integration.wandb.WandbLoggerCallback'>` to match the method signature in `ray.tune.callback.Callback`.
+  warnings.warn(
+DEBUG:git.cmd:Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/private/home/dejang/tools/cg_rllib_slurm, universal_newlines=False, shell=None, istream=None)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG:urllib3.connectionpool:https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 521
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.wandb.ai:443
+DEBUG:urllib3.connectionpool:https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 325
+wandb: Currently logged in as: dejang. Use `wandb login --relogin` to force relogin
+wandb: WARNING Tried to auto resume run with id 268ea_00000 but id db83b_00000 is set.
+DEBUG:git.cmd:Popen(['git', 'cat-file', '--batch-check'], cwd=/private/home/dejang/tools/cg_rllib_slurm, universal_newlines=False, shell=None, istream=<valid stream>)
+[2m[36m(PPO pid=2560788)[0m 2022-10-17 12:21:21,062	INFO ppo.py:166 -- In multi-agent mode, policies will be optimized sequentially by the multi-GPU optimizer. Consider setting simple_optimizer=True if this doesn't work for you.
+[2m[36m(PPO pid=2560788)[0m 2022-10-17 12:21:21,063	INFO trainer.py:743 -- Current log_level is ERROR. For more information, set 'log_level': 'INFO' / 'DEBUG' or use the -v and -vv flags.
+wandb: wandb version 0.13.4 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.3
+wandb: Run data is saved locally in /private/home/dejang/tools/cg_rllib_slurm/wandb/run-20221017_122116-db83b_00000
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run PPO_compiler_gym_db83b_00000
+wandb: ⭐️ View project at https://wandb.ai/dejang/loop_tool_agent_split
+wandb: 🚀 View run at https://wandb.ai/dejang/loop_tool_agent_split/runs/db83b_00000
+[2m[33m(raylet)[0m [2022-10-17 12:22:13,426 E 2565630 2565630] core_worker.cc:451: Failed to register worker 0ef4a94f086ef71312321350d11046d16d941cc566782fe6e2911286 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:22:14,208 E 2565932 2565932] core_worker.cc:451: Failed to register worker ade611cb8e48b76b29be265b7c2f39585c51845347ba1054af447f28 to Raylet. Invalid: Invalid: Unknown worker
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): o151352.ingest.sentry.io:443
+DEBUG:urllib3.connectionpool:https://o151352.ingest.sentry.io:443 "POST /api/5288891/envelope/ HTTP/1.1" 200 2
+[2m[33m(raylet)[0m [2022-10-17 12:22:19,698 E 2565965 2565965] core_worker.cc:451: Failed to register worker 59857bdab66655924c0b9df4d76075ffc4b3db8e71b9f9f1f220a0c3 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:22:22,795 E 2566041 2566041] core_worker.cc:451: Failed to register worker 83265f2c3de241cddff81d55990a81b35d619dcf95a1423e03a0bcf1 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:22:23,099 E 2566099 2566099] core_worker.cc:451: Failed to register worker b210d7758942e11d0aa0603b30c7a6498fc0e2ddd427b8230a21bee1 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:22:24,228 E 2566170 2566170] core_worker.cc:451: Failed to register worker 8710d2cec9805fb01f42f26a333b56b542e83b2d9b6aeec984f2cb5f to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:22:25,812 E 2566190 2566190] core_worker.cc:451: Failed to register worker aed9f3e0980a0788f153026f7fccd1b1a7c90ef819123ca641068b4a to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:22:28,167 E 2566514 2566514] core_worker.cc:451: Failed to register worker 905c0ae6e5230007b84cfdebd4bfeefbbb6a6aa5c198fb777e044f11 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:22:29,864 E 2566852 2566852] core_worker.cc:451: Failed to register worker e4bde5ce86115fc0442644973580f0a68e9375ec24d99c2903fa122f to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:22:34,757 E 2566904 2566904] core_worker.cc:451: Failed to register worker 6a20b77f5f013c4166b2e5de76caa4049f684052688d1c118b0f07b8 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:22:35,159 E 2566946 2566946] core_worker.cc:451: Failed to register worker 9e2fd807cea90f1b147b8086d250c85367b43e7767dffa4bd33a058e to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:22:36,435 E 2567006 2567006] core_worker.cc:451: Failed to register worker 362cdaa333bd1a5b636e40f613113240d779b76f2d432612d2fcc57a to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:22:37,372 E 2567339 2567339] core_worker.cc:451: Failed to register worker 3563cef97c7509ed51a73f7f1391fa7e1089df57e7d2dac5f3d45146 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:22:40,865 E 2567413 2567413] core_worker.cc:451: Failed to register worker 8ba45b375ac12ac342f8fdee090a90b849eefaab9c28080d891ef0ce to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:22:42,016 E 2567468 2567468] core_worker.cc:451: Failed to register worker b03b8212d3995c1899d251775f5e3b4df73735bc74043102d922f515 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:22:42,859 E 2567508 2567508] core_worker.cc:451: Failed to register worker 2079ca1edd622eb6b76afd95d176ef3a5c04ac73908410d71d599040 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:22:47,571 E 2567556 2567556] core_worker.cc:451: Failed to register worker b015b7a0c4d1727b8a901e55250562009578459af99657d88fede0ba to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:22:49,389 E 2567610 2567610] core_worker.cc:451: Failed to register worker 24b82e397e9be2eb1d8d1f9ea6b2d221be5d9a80dfbb3a3c6f0b0b77 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:22:52,970 E 2567671 2567671] core_worker.cc:451: Failed to register worker 9168818e15817dbb9a5bd3df5b79d62284bc564392cd10266f606a1d to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:23:00,681 E 2567974 2567974] core_worker.cc:451: Failed to register worker 46fa4e0f459549adc5095eb616c6582532a77963b6bed4540013fea4 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:23:02,184 E 2568190 2568190] core_worker.cc:451: Failed to register worker 9aac64ecd25ce16abda5c49e7b06c2c5562aca236de99b550bacfa32 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:23:03,952 E 2568420 2568420] core_worker.cc:451: Failed to register worker d2975e5500a7c5e2e040fb91dda4481cbcc1fb3a4ea2301f17c0ab24 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:23:06,357 E 2568471 2568471] core_worker.cc:451: Failed to register worker 8e0b4487261ef21aec56f0d0176c791f31fbbab72ade5de92389f734 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:23:08,663 E 2568543 2568543] core_worker.cc:451: Failed to register worker 4c99d563f21406920bd3636f1ce235e4168029fbef190735175afb31 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:23:10,919 E 2569262 2569262] core_worker.cc:451: Failed to register worker d5ba8986898a42a1b49f9520daee6ed538e4468e08659ffc91426490 to Raylet. Invalid: Invalid: Unknown worker
+[2m[33m(raylet)[0m [2022-10-17 12:23:12,847 E 2569631 2569631] core_worker.cc:451: Failed to register worker 78169115165a0172c908f482cb23a82a5310529c6610cfc4d5c471bf to Raylet. Invalid: Invalid: Unknown worker
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 65664307 ON learnfair0257 CANCELLED AT 2022-10-17T12:23:14 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 65664307.1 ON learnfair0257 CANCELLED AT 2022-10-17T12:23:14 DUE TO TIME LIMIT ***
